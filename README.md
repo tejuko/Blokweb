@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.svnk.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  hier de naam van de pagina HOME 
+  <img src="readme-images/screenshot_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  hier de naam van de pagina OVERZICHT
+  <img src="readme-images/screenshot_overzicht.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -53,10 +53,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>uitwerken na test in 2<sup>e</sup> werkgroep 2</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  De narrator sloeg verschillende vlakken tekst over, verder zijn bepaalde buttons na het hoveren onleesbaar voor mensen met een visuele beperking.
 
 </details>
 
