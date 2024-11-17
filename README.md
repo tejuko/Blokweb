@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -58,6 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   De narrator sloeg verschillende vlakken tekst over, verder zijn bepaalde buttons na het hoveren onleesbaar voor mensen met een visuele beperking.
+  Ook is er geen alt tekst toegevoegd bij de afbeeldingen.
 
 </details>
 
