@@ -19,6 +19,11 @@ nav a {
   text-decoration: none;
   color: #1f2e53;
   gap: 8px;
+  padding: 0.8em;
+}
+
+nav a:hover {
+  color: #6ede92;  
 }
 
 nav a:first-child img {
@@ -37,13 +42,17 @@ nav a img {
   cursor: pointer;
 }
 
+/* Align the last three links to the right */
+nav a:nth-child(3) {
+  margin-left: auto; /* Pushes these items to the right */
+}
+
 /*opmaak body*/
-div {
+section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 /*opmaak header*/
 header {
