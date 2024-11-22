@@ -91,7 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <img src="readme-images/sScreenshot_versie_1.png" width="375px" alt="home scherm van de pagina">
+  <img src="readme-images/Screenshot_versie_1.png" width="375px" alt="home scherm van de pagina">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
