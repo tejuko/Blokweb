@@ -102,6 +102,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+- Hoe krijg je tekst over plaatjes?
+- hoe werken grids, hoe voeg je deze toe aan je website?
+- watvoor elementen kun je het beste gebruiken inplaats van een div?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
