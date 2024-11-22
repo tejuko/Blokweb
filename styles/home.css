@@ -3,13 +3,16 @@ body {
 }
 
 /*opmaak voor navigatiebalk*/
-nav {
+ul{
   display: flex;
+  align-items: center;
   gap: 8px;
   padding: 24px 16px;
+  list-style-type: none;
+  margin: 0;
 }
 
-nav a {
+ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,28 +25,28 @@ nav a {
   padding: 0.8em;
 }
 
-nav a:hover {
+ul li a:hover {
   color: #6ede92;  
 }
 
-nav a:first-child img {
+ul li:first-child img {
   width: 150px;
   height: auto;
   transition: 0.3s;
 }
 
-nav a:first-child img:hover {
+ul li:first-child img:hover {
   width: 155px;
   height: auto;
 }
 
-nav a img {
+ul li img {
   width: 26px;
   cursor: pointer;
 }
 
 /* Align the last three links to the right */
-nav a:nth-child(3) {
+ul li:nth-child(3) {
   margin-left: auto; /* Pushes these items to the right */
 }
 
