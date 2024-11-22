@@ -1,13 +1,13 @@
 body {
-  padding: 8px;
+  padding: 0.5em; /* 8px = 0.5em */
 }
 
 /*opmaak voor navigatiebalk*/
-ul{
+ul {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 24px 16px;
+  gap: 0.5em; /* 8px = 0.5em */
+  padding: 1.5em 1em; /* 24px = 1.5em, 16px = 1em */
   list-style-type: none;
   margin: 0;
 }
@@ -18,11 +18,11 @@ ul li a {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1em; /* 16px = 1em */
   text-decoration: none;
   color: #1f2e53;
-  gap: 8px;
-  padding: 0.8em;
+  gap: 0.5em; /* 8px = 0.5em */
+  padding: 0.8em; /* Keep as is, already in em */
 }
 
 ul li a:hover {
@@ -30,23 +30,22 @@ ul li a:hover {
 }
 
 ul li:first-child img {
-  width: 150px;
+  width: 9.375em; /* 150px = 9.375em */
   height: auto;
   transition: 0.3s;
 }
 
 ul li:first-child img:hover {
-  width: 155px;
-  height: auto;
+  width: 9.6875em; /* 155px = 9.6875em */
 }
 
 ul li img {
-  width: 26px;
+  width: 1.625em; /* 26px = 1.625em */
   cursor: pointer;
 }
 
 /* Align the last three links to the right */
-ul li:nth-child(3) {
+ul li:nth-of-type(3) {
   margin-left: auto; /* Pushes these items to the right */
 }
 
@@ -58,46 +57,54 @@ section {
 }
 
 /*opmaak header*/
-header {
+main {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 32px 16px 64px;
+  width: 31.25em; /* 50% of 50em (assuming base font size is 16px) */
+  padding: 2em 1em 4em; /* 32px = 2em, 16px = 1em, 64px = 4em */
   background-color: white;
 }
 
-header h1 {
+main h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 48.8px;
+  font-size: 3.05em; /* 48.8px = 3.05em */
   margin: 0px;
 }
 
-header p {
+main p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  margin: 16px 0px;
+  font-size: 1.25em; /* 20px = 1.25em */
+  margin: 1em 0px; /* 16px = 1em */
 }
 
 /*header button opmaak*/
-header button {
+main button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1em; /* 16px = 1em */
   text-align: center;
   background-color: #6ede92;
   border: none;
-  padding: 10px 20px;
-  width: 12em;
-  border-radius: 15px;
-  margin: 8px 8px 0px 0px;
-  cursor:pointer;
+  padding: 0.625em 1.25em; /* 10px = 0.625em, 20px = 1.25em */
+  width: 7.5em; /* 12em = 12em */
+  border-radius: 0.9375em; /* 15px = 0.9375em */
+  margin: 0.5em 0.5em 0px 0px; /* 8px = 0.5em */
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-header button:hover {
+main button:hover {
   background-color: #4c9c66;
 }
 
 /*img opmaak*/
+
+/*fonts*/
+@font-face {
+  font-family: 'Monteserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+
+    font-style: normal;
+}
