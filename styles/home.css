@@ -54,6 +54,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0em 1.5em 0em 1.5em;
 }
 
 /*opmaak main*/
@@ -112,7 +113,7 @@ section img {
 }
 
 /*4 knoppen opmaak*/
-footer ol {
+main ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -121,15 +122,15 @@ footer ol {
   gap: clamp(1em, 1vw, 3em);
 }
 
-footer ol li {
-  width: 8em;
+main ol li {
+  width: 12em;
   padding: 0.75em;
   border-radius: 1em;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer ol li a{
+main ol li a{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,7 +142,7 @@ footer ol li a{
   color: black;
 }
 
-footer img {
+main ol li img {
   height: 2em;
   width: 2em;
   display: inline-block;
@@ -149,13 +150,43 @@ footer img {
   transition: transform 0.4s ease;
 }
 
-footer img:hover {
+main ol li img:hover {
   transform: translateY(-0.4em);
 }
 
-footer span {
+main span {
   padding: 0.75em;
 }
+
+/* footer opmaak */
+footer {
+  display: flex;
+  gap: 2em;
+}
+
+footer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+footer section {
+  display: flex;
+  justify-content: normal;
+  flex-direction: column;
+  width: 30%;
+  background-color: #6ede92;
+  border-radius: 1em;
+}
+
+
+
+
 
 @media (width > 52em) {
 	section {
@@ -172,7 +203,7 @@ footer span {
 }
 
 @media (width < 52em) {
-  footer ol {
+  main ol {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
