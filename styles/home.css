@@ -16,7 +16,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontMedium, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em; 
   text-decoration: none;
@@ -67,7 +67,7 @@ section {
 } */
 
 main h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontBold, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 3.05em; /* 48.8px = 3.05em */
   color: #1f2e53;
@@ -75,7 +75,7 @@ main h1 {
 }
 
 main p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontMedium, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.25em; /* 20px = 1.25em */
   color: #1f2e53;
@@ -84,7 +84,7 @@ main p {
 
 /*header button opmaak*/
 main button {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontMedium, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em; 
   text-align: center;
@@ -103,11 +103,11 @@ main button:hover {
 }
 
 /*img opmaak*/
-section div {
+main section div {
   padding: 32px 16px 64px;
 }
 
-section img {
+main section img {
   display: none;
   cursor: pointer;
 }
@@ -136,7 +136,7 @@ main ol li a{
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontMedium, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em;
   color: black;
@@ -161,46 +161,74 @@ main span {
 /* footer opmaak */
 footer {
   display: flex;
-  gap: 2em;
+  gap: 4em;
+  padding: 0 4.5em;
 }
 
 footer h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontBold, Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 600;
+  line-height: 1.5em;
+}
+
+footer h3 {
+  font-family: MontBold, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
 }
 
 footer p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  line-height: 1.5em;
+  margin: 0 0 1em;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 0.5em 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer section img {
+  width: 18px;
+  height: 18px;
 }
 
 footer section {
   display: flex;
   justify-content: normal;
   flex-direction: column;
-  width: 30%;
+  align-items: flex-start;
+  width: clamp(20.5em, 100vw, 36em);
   background-color: #6ede92;
   border-radius: 1em;
 }
 
-
-
-
-
 @media (width > 52em) {
-	section {
+	main section {
 		display:grid;
 		grid-template-columns:1fr 1fr;
 	}
-	section img {
+	main section img {
 		display:block;
 		width:100%;
 		height:clamp(16em, 50vw, 30em);
 		object-fit:cover;
-	} 
-  /* bron: Sanne */
+	}
 }
+  /* bron: Sanne */
 
 @media (width < 52em) {
   main ol {
@@ -208,12 +236,27 @@ footer section {
     flex-wrap: wrap;
     padding: 0;
   }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*fonts*/
 @font-face {
-  font-family: 'Monteserrat';
+  font-family: MontNormal;
+  font-weight: normal;
   src: url('../fonts/Montserrat-Regular.ttf');
+}
 
-    font-style: normal;
+@font-face {
+  font-family: MontMedium;
+  font-weight: medium;
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: MontBold;
+  font-weight: medium;
+  src: url('../fonts/Montserrat-Bold.ttf');
 }
