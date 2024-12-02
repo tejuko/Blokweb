@@ -1,0 +1,80 @@
+/*opmaak voor navigatiebalk*/
+ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.5em 1em; 
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MontMedium, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1em; 
+    text-decoration: none;
+    color: #1f2e53;
+    gap: 0.5em; 
+    padding: 0.8em;
+  }
+  
+  ul li a:hover {
+    color: #6ede92;  
+  }
+  
+  ul li:first-child img {
+    width: 9.375em; 
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  ul li:first-child img:hover {
+    width: 9.6875em; 
+  }
+  
+  ul li img {
+    width: 1.625em; 
+    cursor: pointer;
+  }
+  
+  /* Align the last three links to the right */
+  ul li:nth-of-type(3) {
+    margin-left: auto; /* Pushes these items to the right */
+  }
+
+  @media (width < 52em) {
+    ul li a span{
+      display: none;
+    }
+    ul li:nth-of-type(3) {
+      margin-left: 0; /* Pushes these items to the right */
+    }
+    ul li:first-child {
+      margin-right: auto; /* Pushes the rest to the right */
+    }
+    ul {
+      gap: 0;
+    }
+  }
+  
+  /*fonts*/
+  @font-face {
+    font-family: MontNormal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: MontMedium;
+    font-weight: medium;
+    src: url('../fonts/Montserrat-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: MontBold;
+    font-weight: medium;
+    src: url('../fonts/Montserrat-Bold.ttf');
+  }

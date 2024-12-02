@@ -83,11 +83,13 @@ main p {
 }
 
 /*header button opmaak*/
-main button {
+main div a {
   font-family: MontMedium, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em; 
   text-align: center;
+  text-decoration: none;
+  color: #1f2e53;
   background-color: #6ede92;
   border: none;
   padding: 0.625em 1.25em; 
@@ -98,7 +100,7 @@ main button {
   transition: 0.3s;
 }
 
-main button:hover {
+main div a:hover {
   background-color: #4c9c66;
 }
 
@@ -214,6 +216,7 @@ footer section {
   width: clamp(20.5em, 100vw, 36em);
   background-color: #6ede92;
   border-radius: 1em;
+  padding-bottom: 1.5em;
 }
 
 @media (width > 52em) {
@@ -239,6 +242,19 @@ footer section {
   footer {
     display: flex;
     flex-wrap: wrap;
+    padding: 1em;
+  }
+  ul li a span{
+    display: none;
+  }
+  ul li:nth-of-type(3) {
+    margin-left: 0; /* Pushes these items to the right */
+  }
+  ul li:first-child {
+    margin-right: auto; /* Pushes the rest to the right */
+  }
+  ul {
+    gap: 0;
   }
 }
 
