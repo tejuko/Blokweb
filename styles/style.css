@@ -28,4 +28,281 @@
 /****************/
 
 /* jouw code */
-
+body {
+	padding: 0.5em; 
+  }
+  
+  /*opmaak voor navigatiebalk*/
+  ul {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 1.5em 1em; 
+	list-style-type: none;
+	margin: 0;
+  }
+  
+  ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1em; 
+	text-decoration: none;
+	color: #1f2e53;
+	gap: 0.5em; 
+	padding: 0.8em;
+  }
+  
+  ul li a:hover {
+	color: #6ede92;  
+  }
+  
+  ul li:first-child img {
+	width: 9.375em; 
+	height: auto;
+	transition: 0.3s;
+  }
+  
+  ul li:first-child img:hover {
+	width: 9.6875em; 
+  }
+  
+  ul li img {
+	width: 1.625em; 
+	cursor: pointer;
+  }
+  
+  /* Align the last three links to the right */
+  ul li:nth-of-type(3) {
+	margin-left: auto; /* Pushes these items to the right */
+  }
+  
+  /*opmaak body*/
+  section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0em 1.5em 0em 1.5em;
+  }
+  
+  /*opmaak main*/
+  /* main {
+	display: flex;
+	flex-direction: row;
+	width: 31.25em;
+	padding: 2em 1em 4em; 
+	background-color: white;
+  } */
+  
+  main h1 {
+	font-family: MontBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 3.05em; /* 48.8px = 3.05em */
+	color: #1f2e53;
+	margin: 0px;
+  }
+  
+  main p {
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.25em; /* 20px = 1.25em */
+	color: #1f2e53;
+	margin: 1em 0px; /* 16px = 1em */
+  }
+  
+  /*header button opmaak*/
+  main div a {
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1em; 
+	text-align: center;
+	text-decoration: none;
+	color: #1f2e53;
+	background-color: #6ede92;
+	border: none;
+	padding: 0.625em 1.25em; 
+	width: 12em; 
+	border-radius: 1em; 
+	margin: 0.5em 0.5em 0px 0px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  main div a:hover {
+	background-color: #4c9c66;
+  }
+  
+  /*img opmaak*/
+  main section div {
+	padding: 32px 16px 64px;
+  }
+  
+  main section img {
+	display: none;
+	cursor: pointer;
+  }
+  
+  /*4 knoppen opmaak*/
+  main ol {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	background-color: white;
+	gap: clamp(1em, 1vw, 3em);
+  }
+  
+  main ol li {
+	width: 12em;
+	padding: 0.75em;
+	border-radius: 1em;
+	background-color: white;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  main ol li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	color: black;
+  }
+  
+  main ol li img {
+	height: 2em;
+	width: 2em;
+	display: inline-block;
+	position: relative;
+	transition: transform 0.4s ease;
+  }
+  
+  main ol li img:hover {
+	transform: translateY(-0.4em);
+  }
+  
+  main span {
+	padding: 0.75em;
+  }
+  
+  /* article opmaak */
+  article {
+	display: flex;
+	gap: 4em;
+	padding: 0 4.5em;
+  }
+  
+  article h2 {
+	font-family: MontBold, Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1.5em;
+  }
+  
+  article h3 {
+	font-family: MontBold, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 0;
+  }
+  
+  article p {
+	font-family: MontNormal, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0 0 1em;
+  }
+  
+  article a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	text-decoration: none;
+	font-family: MontNormal, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: black;
+	padding: 0.5em 0;
+  }
+  
+  article a:hover {
+	text-decoration: underline;
+  }
+  
+  article section img {
+	width: 18px;
+	height: 18px;
+  }
+  
+  article section {
+	display: flex;
+	justify-content: normal;
+	flex-direction: column;
+	align-items: flex-start;
+	width: clamp(20.5em, 100vw, 36em);
+	background-color: #6ede92;
+	border-radius: 1em;
+	padding-bottom: 1.5em;
+  }
+  
+  @media (width > 52em) {
+	  main section {
+		  display:grid;
+		  grid-template-columns:1fr 1fr;
+	  }
+	  main section img {
+		  display:block;
+		  width:100%;
+		  height:clamp(16em, 50vw, 30em);
+		  object-fit:cover;
+	  }
+  }
+	/* bron: Sanne */
+  
+  @media (width < 52em) {
+	main ol {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0;
+	}
+	article {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 1em;
+	}
+	ul li a span{
+	  display: none;
+	}
+	ul li:nth-of-type(3) {
+	  margin-left: 0; /* Pushes these items to the right */
+	}
+	ul li:first-child {
+	  margin-right: auto; /* Pushes the rest to the right */
+	}
+	ul {
+	  gap: 0;
+	}
+  }
+  
+  /*fonts*/
+  @font-face {
+	font-family: MontNormal;
+	font-weight: normal;
+	src: url('../fonts/Montserrat-Regular.ttf');
+  }
+  
+  @font-face {
+	font-family: MontMedium;
+	font-weight: medium;
+	src: url('../fonts/Montserrat-Medium.ttf');
+  }
+  
+  @font-face {
+	font-family: MontBold;
+	font-weight: medium;
+	src: url('../fonts/Montserrat-Bold.ttf');
+  }
