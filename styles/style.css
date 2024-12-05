@@ -29,7 +29,8 @@
 
 /* jouw code */
 body {
-	padding: 0.5em; 
+	padding: 0em; 
+	margin: 0em;
   }
   
   /*opmaak voor navigatiebalk*/
@@ -60,13 +61,13 @@ body {
   }
   
   ul li:first-child img {
-	width: 9.375em; 
+	width: 9.4em; 
 	height: auto;
 	transition: 0.3s;
   }
   
   ul li:first-child img:hover {
-	width: 9.6875em; 
+	width: 9.7em; 
   }
   
   ul li img {
@@ -80,13 +81,13 @@ body {
   }
   
   /*opmaak main*/
-  section {
+  main section:first-of-type {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0em 1.5em 0em 1.5em;
   }
-  
+
   main {
 	color: #263238;
   }
@@ -128,17 +129,16 @@ body {
   }
   
   /*img opmaak*/
-  main section div {
+  main section:first-of-type div {
 	padding: 32px 16px 64px;
   }
   
-  main section img {
+  main > section:first-of-type > img {
 	display: none;
-	cursor: pointer;
   }
   
   /*4 knoppen opmaak*/
-  main ol {
+	main > section:nth-of-type(2) ol {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -147,7 +147,7 @@ body {
 	gap: clamp(1em, 1vw, 3em);
   }
   
-  main ol li {
+  main > section:nth-of-type(2) ol li {
 	width: 12em;
 	padding: 0.75em;
 	text-align: center;
@@ -156,7 +156,7 @@ body {
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  main ol li a{
+  main > section:nth-of-type(2) ol li a{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -168,7 +168,7 @@ body {
 	font-size: 1em;
   }
   
-  main ol li img {
+  main > section:nth-of-type(2) ol li img {
 	height: 2em;
 	width: 2em;
 	display: inline-block;
@@ -176,42 +176,48 @@ body {
 	transition: transform 0.4s ease;
   }
   
-  main ol li img:hover {
+  main > section:nth-of-type(2) ol li img:hover {
 	transform: translateY(-0.4em);
   }
   
-  main span {
+  main > section:nth-of-type(2) span {
 	padding: 0.75em 0;
   }
   
   /* article opmaak */
-  main article {
+  main > section:nth-of-type(3) section {
+	display: flex;
+	justify-content: center;
+	padding: 0em 1.5em 0em 1.5em;
+  }
+
+  main > section:nth-of-type(3) {
 	display: flex;
 	gap: 2em;
 	padding: 0 4.5em;
   }
   
-  main article h2 {
+  main > section:nth-of-type(3) h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
 	font-weight: 600;
 	line-height: 1.5em;
   }
   
-  main article h3 {
+  main > section:nth-of-type(3) > section > p:nth-of-type(3) {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	margin: 0;
   }
   
-  main article p {
+  main > section:nth-of-type(3) p {
 	font-family: MontNormal, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
 	margin: 0 0 1em;
   }
   
-  main article a {
+  main > section:nth-of-type(3) a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -223,16 +229,16 @@ body {
 	padding: 0.5em 0;
   }
   
-  main article a:hover {
+  main > section:nth-of-type(3) a:hover {
 	text-decoration: underline;
   }
   
-  main article section img {
+  main > section:nth-of-type(3) section img {
 	width: 18px;
 	height: 18px;
   }
   
-  main article section {
+  main > section:nth-of-type(3) section {
 	display: flex;
 	justify-content: normal;
 	flex-direction: column;
@@ -286,7 +292,7 @@ body {
 	background-color: #1f2e53;
 	color: white;
 	padding: 4em 0;
-	margin: 0;
+	margin-top: 4em;
   }
 
   footer section {
@@ -336,11 +342,11 @@ body {
 
   
 @media (width > 52em) {
-	main section {
+	main section:first-of-type {
 		display:grid;
 		grid-template-columns:1fr 1fr;
 	}
-	main section img {
+	main section:first-of-type img {
 		display:block;
 		width:100%;
 		height:clamp(16em, 50vw, 30em);
@@ -355,7 +361,7 @@ body {
 		flex-wrap: wrap;
 		padding: 0;
   	}
-  	main article {
+  	main > section:nth-of-type(3) {
 		display: flex;
 		flex-wrap: wrap;
 		padding: 1em;
@@ -378,25 +384,20 @@ body {
 		display: none;
  	}
  	ul li a {
-	  padding: 0;
-	  margin: 0;
+	    padding: 0;
+	    margin: 0;
  	}
  	footer {
-	flex-direction: column;
-	align-items: baseline;
+		flex-direction: column;
+		align-items: baseline;
 	}
 	footer section {
 		width: auto;
 	}
-	#swag {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 1em;
-  	}
 }
 
 @media (width < 28em) {
-  main ol li {
+	main > section:nth-of-type(2) ol li {
 	  width: 9em;
 	  padding: 0.75em;
 	  border-radius: 1em;
