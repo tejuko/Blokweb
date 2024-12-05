@@ -15,7 +15,7 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text: #263238;
 	--color-background:#eee;
 }
 
@@ -50,7 +50,7 @@ body {
 	font-weight: 600;
 	font-size: 1em; 
 	text-decoration: none;
-	color: #1f2e53;
+	color: #263238;
 	gap: 0.5em; 
 	padding: 0.8em;
   }
@@ -79,7 +79,7 @@ body {
 	margin-left: auto; /* Pushes these items to the right */
   }
   
-  /*opmaak body*/
+  /*opmaak main*/
   section {
 	display: flex;
 	justify-content: center;
@@ -87,28 +87,21 @@ body {
 	padding: 0em 1.5em 0em 1.5em;
   }
   
-  /*opmaak main*/
-  /* main {
-	display: flex;
-	flex-direction: row;
-	width: 31.25em;
-	padding: 2em 1em 4em; 
-	background-color: white;
-  } */
-  
-  main h1 {
+  main {
+	color: #263238;
+  }
+
+  main div h1 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 3.05em; /* 48.8px = 3.05em */
-	color: #1f2e53;
 	margin: 0px;
   }
   
-  main p {
+  main div p {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1.25em; /* 20px = 1.25em */
-	color: #1f2e53;
 	margin: 1em 0px; /* 16px = 1em */
   }
   
@@ -119,7 +112,7 @@ body {
 	font-size: 1em; 
 	text-align: center;
 	text-decoration: none;
-	color: #1f2e53;
+	color: #263238;
 	background-color: #6ede92;
 	border: none;
 	padding: 0.625em 1.25em; 
@@ -169,10 +162,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	color: #263238;
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1em;
-	color: black;
   }
   
   main ol li img {
@@ -192,33 +185,33 @@ body {
   }
   
   /* article opmaak */
-  article {
+  main article {
 	display: flex;
 	gap: 2em;
 	padding: 0 4.5em;
   }
   
-  article h2 {
+  main article h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
 	font-weight: 600;
 	line-height: 1.5em;
   }
   
-  article h3 {
+  main article h3 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	margin: 0;
   }
   
-  article p {
+  main article p {
 	font-family: MontNormal, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
 	margin: 0 0 1em;
   }
   
-  article a {
+  main article a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -226,20 +219,20 @@ body {
 	text-decoration: none;
 	font-family: MontNormal, Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: black;
+	color: #263238;
 	padding: 0.5em 0;
   }
   
-  article a:hover {
+  main article a:hover {
 	text-decoration: underline;
   }
   
-  article section img {
+  main article section img {
 	width: 18px;
 	height: 18px;
   }
   
-  article section {
+  main article section {
 	display: flex;
 	justify-content: normal;
 	flex-direction: column;
@@ -249,64 +242,168 @@ body {
 	border-radius: 1em;
 	padding-bottom: 1.5em;
   }
-  
-  @media (width > 52em) {
-	  main section {
-		  display:grid;
-		  grid-template-columns:1fr 1fr;
-	  }
-	  main section img {
-		  display:block;
-		  width:100%;
-		  height:clamp(16em, 50vw, 30em);
-		  object-fit:cover;
-	  }
+
+/* opmaak 2e deel main */
+#swag  {
+	display: flex;
+	gap: 2em;
+	padding: 0 4.5em;
+	color: #263238;
   }
-	/* bron: Sanne */
   
-  @media (width < 52em) {
-	main ol {
-	  	display: flex;
-	  	flex-wrap: wrap;
-	  	padding: 0;
-	}
-	article {
-	  	display: flex;
-	  	flex-wrap: wrap;
-	  	padding: 1em;
-	}
-	ul li a span{
-	  	display: none;
-	}
-	ul li:nth-of-type(3) {
-	  	margin-left: 0; /* Pushes these items to the right */
-	}
-	ul li:first-child {
-	  	margin-right: auto; /* Pushes the rest to the right */
-	}
-	ul {
-	  	gap: 0;
-	}
-	ul li:nth-of-type(3) img,
-	ul li:nth-of-type(4) img,
-	ul li:nth-of-type(5) img {
-	  	display: none;
-	}
-	ul li a {
-		padding: 0;
-		margin: 0;
-	}
+#swag section {
+	display: flex;
+	justify-content: normal;
+	flex-direction: column;
+	align-items: flex-start;
+	width: clamp(20.5em, 100vw, 36em);
+	background-color: wheat;
+	border-radius: 1em;
+	padding-bottom: 1.5em;
   }
 
-  @media (width < 28em) {
-	main ol li {
-		width: 9em;
-		padding: 0.75em;
-		border-radius: 1em;
-		background-color: white;
-		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	  }
+#swag img {
+	width: 16em;
+	height: 13em;
+}
+
+#swag p {
+	font-family: MontLight, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+#swag h2 {
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	font-size: 1.25em;
+}
+
+/* opmaak footer */
+  footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: #1f2e53;
+	color: white;
+	padding: 4em 0;
+	margin: 0;
   }
+
+  footer section {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 33%;
+  }
+
+  footer p {
+	font-family: MontNormal, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+  }
+
+  footer h2 {
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+  }
+
+  footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  footer a img {
+	width: 1em;
+	height: auto;
+  }
+
+  footer section a{
+	display: flex;
+    justify-content: center;
+    gap: 1em;
+    text-decoration: none;
+    font-family: MontNormal, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    padding-bottom: 1em;
+  }
+
+  footer a:hover {
+	text-decoration: underline;
+  }
+
+
+
+  
+@media (width > 52em) {
+	main section {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+	}
+	main section img {
+		display:block;
+		width:100%;
+		height:clamp(16em, 50vw, 30em);
+		object-fit:cover;
+	}
+}
+  /* bron: Sanne */
+
+@media (width < 52em) {
+  	main ol {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+  	}
+  	main article {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1em;
+  	}
+  	ul li a span{
+		display: none;
+ 	}
+  	ul li:nth-of-type(3) {
+		margin-left: 0; /* Pushes these items to the right */
+ 	}
+ 	ul li:first-child {
+		margin-right: auto; /* Pushes the rest to the right */
+ 	}
+  	ul {
+		gap: 0;
+ 	}
+ 	ul li:nth-of-type(3) img,
+ 	ul li:nth-of-type(4) img,
+	ul li:nth-of-type(5) img {
+		display: none;
+ 	}
+ 	ul li a {
+	  padding: 0;
+	  margin: 0;
+ 	}
+ 	footer {
+	flex-direction: column;
+	align-items: baseline;
+	}
+	footer section {
+		width: auto;
+	}
+	#swag {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1em;
+  	}
+}
+
+@media (width < 28em) {
+  main ol li {
+	  width: 9em;
+	  padding: 0.75em;
+	  border-radius: 1em;
+	  background-color: white;
+	  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	}
+}
   
   /*fonts*/
   @font-face {
@@ -325,4 +422,10 @@ body {
 	font-family: MontBold;
 	font-weight: medium;
 	src: url('../fonts/Montserrat-Bold.ttf');
+  }
+
+  @font-face {
+	font-family: MontLight;
+	font-weight: normal;
+	src: url('../fonts/Montserrat-Light.ttf');
   }
