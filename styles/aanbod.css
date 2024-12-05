@@ -60,11 +60,6 @@ ul {
     }
   }
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
   footer ol {
     width: 30%;
@@ -120,6 +115,8 @@ ul {
   footer ol li div img:hover {
     scale: 1.1;
   }
+
+  
   
   /*fonts*/
   @font-face {
