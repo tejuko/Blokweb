@@ -1,3 +1,13 @@
+:root {
+  --color-text: #263238;
+	--color-background:#eee;
+}
+
+body {
+	padding: 0em; 
+	margin: 0em;
+}
+
 /*opmaak voor navigatiebalk*/
 header ul {
     display: flex;
@@ -88,8 +98,9 @@ main > section:nth-of-type(1) section:nth-of-type(1) {
 main > section:nth-of-type(2) ul {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1em;
-  padding: 1em;
+  gap: 4em;
+  padding: 1em 2em;
+  margin: 0;
 }  
 
 main > section:nth-of-type(2) ul li {
@@ -98,30 +109,15 @@ main > section:nth-of-type(2) ul li {
   border-radius: 1em;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
   border-style: solid;
   border-width: .01em;
-  border-color: #263238;
+  border-color: #DCDCDC;
+  box-sizing: border-box;
 }
 
-main > section:nth-of-type(2) ul li h2 {
-  grid-row-start: 2;
-  justify-items: center;
-  align-items: center;
-  font-family: MontMedium, Arial, Helvetica, sans-serif;
-  font-size: 1.25em;
-  color: #263238;
-  line-height: 1.5em;
-  margin: 0;
-}
-
-main > section:nth-of-type(2) ul li p {
-  padding: 0;
-  margin: 0;
-}
-
-main > section:nth-of-type(2) ul li p img{
-  width: 2.5em;
-  height: auto;
+main > section:nth-of-type(2) ul li:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main > section:nth-of-type(2) ul li img {
@@ -129,52 +125,123 @@ main > section:nth-of-type(2) ul li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  grid-area: 1/1;
+  z-index: 0;
 }
 
+main > section:nth-of-type(2) ul li h2 {
+  grid-row-start: 2;
+  justify-items: center;
+  align-items: center;
+  font-family: MontBold, Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #263238;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) ul li p {
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #263238;
+  line-height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) ul li p img{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+main > section:nth-of-type(2) ul li > p:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%
+}
+
+/*overlay img text*/
 main > section:nth-of-type(2) ul li > div:first-of-type {
-  background-color: red;
+  background-color: #6ede92;
+  border-radius: 0em 1em 1em 0em;
+  grid-area: 1/1;
+  justify-self: start; /* Align to the left */
+  align-self: end; /* Center vertically */
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  z-index: 1;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+main > section:nth-of-type(2) ul li > div:first-of-type h3 {
+  font-family: MontBold, Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  color: #263238;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) ul li > div:first-of-type p {
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #263238;
+  line-height: 1.5em;
+}
+
+main > section:nth-of-type(2) ul li > div:nth-of-type(2) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5em;
-  width: auto;
+  width: 100%;
   padding: 1em;
+  box-sizing: border-box;
 }
 
-main > section:nth-of-type(2) ul li > div:first-of-type button {
+/*opmaak buttons*/
+main > section:nth-of-type(2) ul li > div:nth-of-type(2) button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: white;
+  border: none; border: 0.1em solid;
+  border-radius: 0.5em;
+  border-color: #DCDCDC;
+  text-decoration: none;
+
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #263238;
 }
 
-main > section:nth-of-type(2) ul li > div:first-of-type button img {
+main > section:nth-of-type(2) ul li > div:nth-of-type(2) button img {
   width: 2.5em;
   height: auto;
   object-fit: cover; 
 }
 
-main > section:nth-of-type(2) ul li > div:nth-of-type(2) {
-  background-color: green;
-  width: fit-content;
+main > section:nth-of-type(2) ul li > div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding: 1em;
-}
-
-@media (width > 52em) {
-	main > section:nth-of-type(2) ul {
-		grid-template-columns: repeat(3, 1fr);
-	  }
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .container { 
-  background-color: rgb(192, 192, 192); 
-  height: 0.5em;
-  width: 80%; 
+  background-color: #DCDCDC; 
+  height: 0.35em;
+  width: 90%; 
   border-radius: 1em; 
 } 
 
 .skill { 
-  background-color: rgb(116, 194, 92); 
+  background-color: #6ede92; 
   color: white; 
-  height: 0.5em;
+  height: 0.35em;
   border-radius: 1em; 
 } 
 
@@ -182,6 +249,23 @@ main > section:nth-of-type(2) ul li > div:nth-of-type(2) {
   width: 80%; 
 }
 /*source: https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/*/
+@media (width > 47em) {
+	main > section:nth-of-type(2) ul {
+		grid-template-columns: repeat(2, 1fr);
+	  } 
+}
+
+@media (width > 68em) {
+	main > section:nth-of-type(2) ul {
+		grid-template-columns: repeat(3, 1fr);
+	  } 
+}
+
+@media (width > 93em) {
+	main > section:nth-of-type(2) ul {
+		grid-template-columns: repeat(4, 1fr);
+	  } 
+}
 
 
 /*****************/
