@@ -1,5 +1,5 @@
 /*opmaak voor navigatiebalk*/
-ul {
+header ul {
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -8,7 +8,7 @@ ul {
     margin: 0;
   }
   
-  ul li a {
+header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,124 +21,255 @@ ul {
     padding: 0.8em;
   }
   
-  ul li a:hover {
+  header ul li a:hover {
     color: #6ede92;  
   }
   
-  ul li:first-child img {
+  header ul li:first-child img {
     width: 9.375em; 
     height: auto;
     transition: 0.3s;
   }
   
-  ul li:first-child img:hover {
+  header ul li:first-child img:hover {
     width: 9.6875em; 
   }
   
-  ul li img {
+  header ul li img {
     width: 1.625em; 
     cursor: pointer;
   }
   
   /* Align the last three links to the right */
-  ul li:nth-of-type(3) {
+  header ul li:nth-of-type(3) {
     margin-left: auto; /* Pushes these items to the right */
   }
 
   @media (width < 52em) {
-    ul li a span{
+    header ul li a span{
       display: none;
     }
-    ul li:nth-of-type(3) {
+    header ul li:nth-of-type(3) {
       margin-left: 0; /* Pushes these items to the right */
     }
-    ul li:first-child {
+    header ul li:first-child {
       margin-right: auto; /* Pushes the rest to the right */
     }
-    ul {
+    header ul {
       gap: 0;
     }
   }
 
+/****************/
+/*Opmaak section 1*/
+/****************/
+.hidetext {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
-  footer ol {
-    width: 30%;
-    padding: 1em;
+main > section:nth-of-type(1)  {
+  background-color: red;
+}
+
+main > section:nth-of-type(1) section:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+/********************/
+/* opmaak section 2 */
+/********************/
+main > section:nth-of-type(2) ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  padding: 1em;
+}  
+
+main > section:nth-of-type(2) ul li {
+	display: grid;
+  justify-items: center;
+  border-radius: 1em;
+  overflow: hidden;
+  cursor: pointer;
+  border-style: solid;
+  border-width: .01em;
+  border-color: #263238;
+}
+
+main > section:nth-of-type(2) ul li h2 {
+  grid-row-start: 2;
+  justify-items: center;
+  align-items: center;
+  font-family: MontMedium, Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  color: #263238;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) ul li p {
+  padding: 0;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) ul li p img{
+  width: 2.5em;
+  height: auto;
+}
+
+main > section:nth-of-type(2) ul li img {
+  grid-row-start: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main > section:nth-of-type(2) ul li > div:first-of-type {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+  width: auto;
+  padding: 1em;
+}
+
+main > section:nth-of-type(2) ul li > div:first-of-type button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main > section:nth-of-type(2) ul li > div:first-of-type button img {
+  width: 2.5em;
+  height: auto;
+  object-fit: cover; 
+}
+
+main > section:nth-of-type(2) ul li > div:nth-of-type(2) {
+  background-color: green;
+  width: fit-content;
+  padding: 1em;
+}
+
+@media (width > 52em) {
+	main > section:nth-of-type(2) ul {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+}
+
+.container { 
+  background-color: rgb(192, 192, 192); 
+  height: 0.5em;
+  width: 80%; 
+  border-radius: 1em; 
+} 
+
+.skill { 
+  background-color: rgb(116, 194, 92); 
+  color: white; 
+  height: 0.5em;
+  border-radius: 1em; 
+} 
+
+.html { 
+  width: 80%; 
+}
+/*source: https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/*/
+
+
+/*****************/
+/* opmaak footer */
+/*****************/
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: #1f2e53;
+	color: white;
+	padding: 4em 1em;
+	margin-top: 4em;
   }
 
-  ol li {
-    width: 100%;
-    cursor: pointer;
-    border-style: solid;
-    border-width: .01em;
-    border-color: #263238;
-  }
-  
-  ol li h2 {
-    grid-row-start: 3;
-    font-family: MontMedium, Arial, Helvetica, sans-serif;
-    font-size: 1.25em;
-    color: #263238;
-    line-height: 1.5em;
-    padding: 0 1em 1em 1em;
-    margin: 0;
+  footer section {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 33%;
+	padding: 1em;
   }
 
-  ol li p {
-    font-family: MontLight, Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: #263238;
-    padding: 1em 1em 0.5em 1em;
-    margin: 0;
-  }
-  
-  ol li {
-    display: grid;
-    border-radius: 1em;
-    overflow: hidden;
+  footer p {
+	font-family: MontNormal, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	margin: 0;
   }
 
-  footer ol li div {
-    grid-row-start: 1;
-
-    overflow: hidden;
+  footer h2 {
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
   }
 
-  footer ol li div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    transition: .3s;
+  footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   }
 
-  footer ol li div img:hover {
-    scale: 1.1;
+  footer a img {
+	width: 1em;
+	height: auto;
   }
 
-  
-  
-  /*fonts*/
-  @font-face {
-    font-family: MontNormal;
-    font-weight: normal;
-    src: url('../fonts/Montserrat-Regular.ttf');
-  }
-  
-  @font-face {
-    font-family: MontMedium;
-    font-weight: medium;
-    src: url('../fonts/Montserrat-Medium.ttf');
-  }
-  
-  @font-face {
-    font-family: MontBold;
-    font-weight: medium;
-    src: url('../fonts/Montserrat-Bold.ttf');
+  footer section a{
+	display: flex;
+    justify-content: center;
+    gap: 1em;
+    text-decoration: none;
+    font-family: MontNormal, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    padding-bottom: 1em;
   }
 
-  @font-face {
-    font-family: MontLight;
-    font-weight: normal;
-    src: url('../fonts/Montserrat-Light.ttf');
+  footer a:hover {
+	text-decoration: underline;
+  }
+
+  @keyframes progress {
+    100% {
+      scale: 0;
     }
+  }
+  
+  /*******/
+  /*fonts*/
+  /*******/
+@font-face {
+  font-family: MontNormal;
+  font-weight: normal;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+    
+@font-face {
+  font-family: MontMedium;
+  font-weight: 600;
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+    
+@font-face {
+  font-family: MontBold;
+  font-weight: bold;
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+  
+@font-face {
+  font-family: MontLight;
+  font-weight: normal;
+  src: url('../fonts/Montserrat-Light.ttf');
+}

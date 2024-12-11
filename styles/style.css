@@ -5,11 +5,6 @@
   box-sizing:border-box;  
 }
 
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -19,10 +14,6 @@
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -31,19 +22,21 @@
 body {
 	padding: 0em; 
 	margin: 0em;
-  }
+}
   
-  /*opmaak voor navigatiebalk*/
-  ul {
+	/***************************/
+	/*opmaak voor navigatiebalk*/
+	/***************************/
+ul {
 	display: flex;
 	align-items: center;
 	gap: 0.5em;
 	padding: 1.5em 1em; 
 	list-style-type: none;
 	margin: 0;
-  }
+}
   
-  ul li a {
+ul li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -54,60 +47,65 @@ body {
 	color: #263238;
 	gap: 0.5em; 
 	padding: 0.8em;
-  }
+}
   
-  ul li a:hover {
+ul li a:hover {
 	color: #6ede92;  
-  }
+}
   
-  ul li:first-child img {
-	width: 9.4em; 
+ul li:first-child img {
+	max-width: 9.4em;
+	width: auto;
 	height: auto;
 	transition: 0.3s;
-  }
+}
   
-  ul li:first-child img:hover {
+ul li:first-child img:hover {
 	width: 9.7em; 
-  }
+}
   
-  ul li img {
+ul li img {
 	width: 1.625em; 
 	cursor: pointer;
-  }
+}
   
   /* Align the last three links to the right */
-  ul li:nth-of-type(3) {
+ul li:nth-of-type(3) {
 	margin-left: auto; /* Pushes these items to the right */
-  }
+}
   
-  /*opmaak main*/
-  main section:first-of-type {
+/*************/
+/*opmaak main*/
+/*************/
+main section:first-of-type {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0em 1.5em 0em 1.5em;
-  }
+}
 
-  main {
+main {
 	color: #263238;
-  }
+}
 
-  main div h1 {
+main div h1 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 3.05em; /* 48.8px = 3.05em */
 	margin: 0px;
-  }
+}
   
-  main div p {
+main div p {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1.25em; /* 20px = 1.25em */
 	margin: 1em 0px; /* 16px = 1em */
-  }
+}
   
-  /*header button opmaak*/
-  main div a {
+/**********************/
+/*header button opmaak*/
+/**********************/
+main div a {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1em; 
@@ -122,23 +120,40 @@ body {
 	margin: 0.5em 0.5em 0px 0px;
 	cursor: pointer;
 	transition: 0.3s;
-  }
+}
   
-  main div a:hover {
+main div a:hover {
 	background-color: #4c9c66;
-  }
+}
   
-  /*img opmaak*/
-  main section:first-of-type div {
+/************/
+/*img opmaak*/
+/************/
+main section:first-of-type div {
 	padding: 32px 16px 64px;
-  }
+}
   
-  main > section:first-of-type > img {
+main > section:first-of-type > img {
 	display: none;
-  }
+}
+
+@media (width > 52em) {
+	main section:first-of-type {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+	}
+	main section:first-of-type img {
+		display:block;
+		width:100%;
+		height:clamp(16em, 50vw, 30em);
+		object-fit:cover;
+	}
+}
   
-  /*4 knoppen opmaak*/
-  main > section:nth-of-type(2) h2 {
+/******************/
+/*section 2 opmaak*/
+/******************/
+main > section:nth-of-type(2) h2 {
 	clip: rect(0 0 0 0);
   	clip-path: inset(50%);
   	height: 1px;
@@ -146,28 +161,28 @@ body {
   	position: absolute;
   	white-space: nowrap;
   	width: 1px;
-  } 
+} 
   /* bron: https://www.a11yproject.com/posts/how-to-hide-content/ */
 
-	main > section:nth-of-type(2) ol {
+main > section:nth-of-type(2) ol {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	list-style: none;
 	background-color: white;
 	gap: clamp(1em, 1vw, 3em);
-  }
+}
   
-  main > section:nth-of-type(2) ol li {
+main > section:nth-of-type(2) ol li {
 	width: 12em;
 	padding: 0.75em;
 	text-align: center;
 	border-radius: 1em;
 	background-color: white;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  main > section:nth-of-type(2) ol li a{
+main > section:nth-of-type(2) ol li a{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -177,58 +192,70 @@ body {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1em;
-  }
+}
   
-  main > section:nth-of-type(2) ol li img {
+main > section:nth-of-type(2) ol li img {
 	height: 2em;
 	width: 2em;
 	display: inline-block;
 	position: relative;
 	transition: transform 0.4s ease;
-  }
+}
   
-  main > section:nth-of-type(2) ol li img:hover {
+main > section:nth-of-type(2) ol li img:hover {
 	transform: translateY(-0.4em);
-  }
+}
   
-  main > section:nth-of-type(2) span {
+main > section:nth-of-type(2) span {
 	padding: 0.75em 0;
-  }
+}
+
+@media (width < 28em) {
+	main > section:nth-of-type(2) ol li {
+	  width: 9em;
+	  padding: 0.75em;
+	  border-radius: 1em;
+	  background-color: white;
+	  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	}
+}
   
-  /* article opmaak */
-  main > section:nth-of-type(3) section {
+/********************/
+/* section 3 opmaak */
+/********************/
+main > section:nth-of-type(3) section {
 	display: flex;
 	justify-content: center;
 	padding: 0em 1.5em 0em 1.5em;
-  }
+}
 
-  main > section:nth-of-type(3) {
+main > section:nth-of-type(3) {
 	display: flex;
 	gap: 2em;
 	padding: 0 4.5em;
-  }
+}
   
-  main > section:nth-of-type(3) h2 {
+main > section:nth-of-type(3) h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
 	font-weight: 600;
 	line-height: 1.5em;
-  }
+}
   
-  main > section:nth-of-type(3) > section > p:nth-of-type(3) {
+main > section:nth-of-type(3) > section > p:nth-of-type(3) {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	margin: 0;
-  }
+}
   
-  main > section:nth-of-type(3) p {
+main > section:nth-of-type(3) p {
 	font-family: MontNormal, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
 	margin: 0 0 1em;
-  }
+}
   
-  main > section:nth-of-type(3) a {
+main > section:nth-of-type(3) a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -238,18 +265,18 @@ body {
 	font-size: 1em;
 	color: #263238;
 	padding: 0.5em 0;
-  }
+}
   
-  main > section:nth-of-type(3) a:hover {
+main > section:nth-of-type(3) a:hover {
 	text-decoration: underline;
-  }
+}
   
-  main > section:nth-of-type(3) section img {
+main > section:nth-of-type(3) section img {
 	width: 18px;
 	height: 18px;
-  }
+}
   
-  main > section:nth-of-type(3) section {
+main > section:nth-of-type(3) section {
 	display: flex;
 	justify-content: normal;
 	flex-direction: column;
@@ -258,51 +285,87 @@ body {
 	background-color: #6ede92;
 	border-radius: 1em;
 	padding-bottom: 1.5em;
-  }
-
-/* opmaak 2e deel main */
-#swag  {
-	display: flex;
-	gap: 2em;
-	padding: 0 4.5em;
-	color: #263238;
-  }
-  
-#swag section {
-	display: flex;
-	justify-content: normal;
-	flex-direction: column;
-	align-items: flex-start;
-	width: clamp(20.5em, 100vw, 36em);
-	background-color: wheat;
-	border-radius: 1em;
-	padding-bottom: 1.5em;
-  }
-
-#swag img {
-	width: 16em;
-	height: 13em;
 }
 
-#swag p {
-	font-family: MontLight, Arial, Helvetica, sans-serif;
-	font-size: 0.9em;
+/********************/
+/* section 4 opmaak */
+/********************/
+main > section:nth-of-type(4) h2 {
+	font-family: MontBold, Arial, Helvetica, sans-serif;
+	font-size: 2em;
 }
 
-#swag h2 {
-	font-family: MontMedium, Arial, Helvetica, sans-serif;
-	line-height: 1.5em;
-	font-size: 1.25em;
+main > section:nth-of-type(4) ol {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    width: 100%;
+    padding: 1em;
 }
 
+main > section:nth-of-type(4) ol li {
+	display: grid;
+    border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    border-style: solid;
+    border-width: .01em;
+    border-color: #263238;
+}
+
+main > section:nth-of-type(4) ol li h2 {
+    grid-row-start: 3;
+    font-family: MontMedium, Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    color: #263238;
+    line-height: 1.5em;
+    padding: 0 1em 1em 1em;
+    margin: 0;
+  }
+
+main > section:nth-of-type(4) ol li p {
+    font-family: MontLight, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #263238;
+    padding: 1em 1em 0.5em 1em;
+    margin: 0;
+  }
+
+main > section:nth-of-type(4) ol li div {
+	grid-row-start: 1;
+
+    overflow: hidden;
+  }
+
+main > section:nth-of-type(4) ol li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: .3s;
+  }
+
+main > section:nth-of-type(4) ol li div img:hover {
+    scale: 1.1;
+  }  
+
+@media (width > 52em) {
+	main > section:nth-of-type(4) ol {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+}
+
+/*****************/
 /* opmaak footer */
+/*****************/
   footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	background-color: #1f2e53;
 	color: white;
-	padding: 4em 0;
+	padding: 4em 1em;
 	margin-top: 4em;
   }
 
@@ -311,6 +374,7 @@ body {
 	align-items: flex-start;
 	flex-direction: column;
 	width: 33%;
+	padding: 1em;
   }
 
   footer p {
@@ -350,20 +414,6 @@ body {
   }
 
 
-
-  
-@media (width > 52em) {
-	main section:first-of-type {
-		display:grid;
-		grid-template-columns:1fr 1fr;
-	}
-	main section:first-of-type img {
-		display:block;
-		width:100%;
-		height:clamp(16em, 50vw, 30em);
-		object-fit:cover;
-	}
-}
   /* bron: Sanne */
 
 @media (width < 52em) {
@@ -407,37 +457,29 @@ body {
 	}
 }
 
-@media (width < 28em) {
-	main > section:nth-of-type(2) ol li {
-	  width: 9em;
-	  padding: 0.75em;
-	  border-radius: 1em;
-	  background-color: white;
-	  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	}
-}
-  
+  /*******/
   /*fonts*/
-  @font-face {
+  /*******/
+@font-face {
 	font-family: MontNormal;
 	font-weight: normal;
 	src: url('../fonts/Montserrat-Regular.ttf');
-  }
+}
   
-  @font-face {
+@font-face {
 	font-family: MontMedium;
-	font-weight: medium;
+	font-weight: 600;
 	src: url('../fonts/Montserrat-Medium.ttf');
-  }
+}
   
-  @font-face {
+@font-face {
 	font-family: MontBold;
-	font-weight: medium;
+	font-weight: bold;
 	src: url('../fonts/Montserrat-Bold.ttf');
-  }
+}
 
-  @font-face {
+@font-face {
 	font-family: MontLight;
 	font-weight: normal;
 	src: url('../fonts/Montserrat-Light.ttf');
-  }
+}

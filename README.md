@@ -142,10 +142,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - ik heb meer over grid geleerd, bijvoorbeeld hoe ik mijn h2 boven de rest kreeg dit was erg handig om verder met een website te kunnen.
+  Ik heb geleerd hoe ik een form moet maken en de tekst ervoor moet verbergen wat handig is voor het formulier dat ik moet maken voor
+  mijn website. https://www.a11yproject.com/posts/how-to-hide-content/ Verder ben ik van groot naar klein gegaan in plaats van andersom,
+  dus ik moet veel aanpassen in mijn code zodat dit weer klopt en van klein naar groot gaan werken. Verder staat alles nu wel goed kwa header main footer, en sections dus dat scheelt. Ik weet nu in iedergeval hoe ik het beter moet doen voor de tweede pagina. Ook weet ik nu hoe ik een formulier moet maken.
 
 </details>
 
