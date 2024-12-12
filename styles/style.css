@@ -27,56 +27,69 @@ body {
 	/***************************/
 	/*opmaak voor navigatiebalk*/
 	/***************************/
-ul {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-	padding: 1.5em 1em; 
-	list-style-type: none;
-	margin: 0;
-}
-  
-ul li a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: MontMedium, Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-size: 1em; 
-	text-decoration: none;
-	color: #263238;
-	gap: 0.5em; 
-	padding: 0.8em;
-}
-  
-ul li a:hover {
-	color: #6ede92;  
-}
-  
-ul li:first-child img {
-	max-width: 9.4em;
-	width: auto;
-	height: auto;
-	transition: 0.3s;
-}
-  
-ul li:first-child img:hover {
-	width: 9.7em; 
-}
-  
-ul li img {
-	width: 1.625em; 
-	cursor: pointer;
-}
-  
-  /* Align the last three links to the right */
-ul li:nth-of-type(3) {
-	margin-left: auto; /* Pushes these items to the right */
-}
-  
-/*************/
-/*opmaak main*/
-/*************/
+	header ul {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		padding: 1.5em 1em; 
+		list-style-type: none;
+		margin: 0;
+	  }
+	  
+	header ul li a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: MontMedium, Arial, Helvetica, sans-serif;
+		font-weight: 600;
+		font-size: 1em; 
+		text-decoration: none;
+		color: #1f2e53;
+		gap: 0.5em; 
+		padding: 0.8em;
+	  }
+	  
+	  header ul li a:hover {
+		color: #6ede92;  
+	  }
+	  
+	  header ul li:first-child img {
+		width: 9.375em; 
+		height: auto;
+		transition: 0.3s;
+	  }
+	  
+	  header ul li:first-child img:hover {
+		width: 9.6875em; 
+	  }
+	  
+	  header ul li img {
+		width: 1.625em; 
+		cursor: pointer;
+	  }
+	  
+	  /* Align the last three links to the right */
+	  header ul li:nth-of-type(3) {
+		margin-left: auto; /* Pushes these items to the right */
+	  }
+	
+	  @media (width < 52em) {
+		header ul li a span{
+		  display: none;
+		}
+		header ul li:nth-of-type(3) {
+		  margin-left: 0; /* Pushes these items to the right */
+		}
+		header ul li:first-child {
+		  margin-right: auto; /* Pushes the rest to the right */
+		}
+		header ul {
+		  gap: 0;
+		}
+	  }
+/******************/
+/*opmaak section 1*/
+/******************/
 main section:first-of-type {
 	display: flex;
 	justify-content: center;
@@ -179,7 +192,7 @@ main > section:nth-of-type(2) ol li {
 	text-align: center;
 	border-radius: 1em;
 	background-color: white;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
 }
   
 main > section:nth-of-type(2) ol li a{
@@ -216,7 +229,7 @@ main > section:nth-of-type(2) span {
 	  padding: 0.75em;
 	  border-radius: 1em;
 	  background-color: white;
-	  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
 	}
 }
   
@@ -427,27 +440,7 @@ main > section:nth-of-type(4) ol li div img:hover {
 		flex-wrap: wrap;
 		padding: 1em;
   	}
-  	ul li a span{
-		display: none;
- 	}
-  	ul li:nth-of-type(3) {
-		margin-left: 0; /* Pushes these items to the right */
- 	}
- 	ul li:first-child {
-		margin-right: auto; /* Pushes the rest to the right */
- 	}
-  	ul {
-		gap: 0;
- 	}
- 	ul li:nth-of-type(3) img,
- 	ul li:nth-of-type(4) img,
-	ul li:nth-of-type(5) img {
-		display: none;
- 	}
- 	ul li a {
-	    padding: 0;
-	    margin: 0;
- 	}
+
  	footer {
 		flex-direction: column;
 		align-items: baseline;
@@ -456,6 +449,8 @@ main > section:nth-of-type(4) ol li div img:hover {
 		width: auto;
 	}
 }
+
+
 
   /*******/
   /*fonts*/
