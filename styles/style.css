@@ -164,7 +164,7 @@ main div a {
 }
   
 main div a:hover {
-	background-color: var(--quaternary-color);
+	background-color: #4c9c66;
 }
   
 /************/
