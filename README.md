@@ -184,7 +184,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+- mag ik de buttons zo gebruiken of moet ik hier iets anders voor in de plaats gebruiken?
+- hoe verberg ik de filter opties in een filter knop?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -194,6 +195,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - nog een punt
   - ...
 
+handige links: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
+https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+https://www.a11yproject.com/posts/how-to-hide-content/
+https://www.youtube.com/watch?v=3T0gjtXRNC0&ab_channel=Coding2GO 
 </details>
 
 

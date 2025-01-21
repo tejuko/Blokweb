@@ -88,17 +88,44 @@
             </section>
 
             <section>
-                <p>23 advertenties binnen Complete aanbod gevonden. Verfijn verder met bovenstaande filters.</p>
-                <p><button></button>Toon kaart</p>
+                <h2 class="hidetext">Keuzes tussen aanbod en keuze tussen kaart tonen</h2>
+                <p>
+                    <span>6</span> 
+                    advertenties binnen
+                    <label for="aanbod-select">
+                        <span class="hidetext">Keuze tussen het complete aanbod en het passende aanbod</span>
+                        <select name="aanbod" id="aanbod-select">
+                            <option value="">Complete aanbod</option>
+                            <option value="decoratie">Passende aanbod</option>
+                        </select>
+                    </label>         
+                    gevonden. Verfijn verder met bovenstaande filters.
+                </p>
+                <form action="">
+                    <input type="checkbox" name="Toonkaart" id="kaart">
+                    <label for="Toonkaart">Toon kaart</label>
+                </form>
             </section>
         </section> 
+
+        <section>
+            <p>Sorteer de advertenties op:
+                <label for="huur-select">
+                    <span class="hidetext">Advertenties sorteren op basis van huurprijs</span>
+                    <select name="huur" id="huur-select">
+                        <option value="">Totale huur (laag-hoog)</option>
+                        <option value="decoratie">Totale huur (hoog-laag)</option>
+                    </select>
+                </label>
+            </p>
+        </section>
 
         <section>
             <ul>
                 <li>
                     <h2>Gijbrechtstraat 146</h2>
                     <p>Alkmaar | Alkmaar-Zuid</p>
-                    <p><img src="readme-images/close.png" alt="">Appartement zonder lift . Tweede etage</p>
+                    <p><img src="readme-images/huislogo.png" alt="">Appartement zonder lift . Tweede etage</p>
                     <img src="readme-images/huis1.582f388" alt="afbeelding van het the huren appartement">
                         <div> 
                             <p><strong>€477,20 p/m</strong></p>
@@ -241,8 +268,6 @@
             </ul>
 
         </section>
-
-        <p>Sorteer de advertenties op: <button>Totale huur (laag-hoog)</button></p>
 
     </main>
 

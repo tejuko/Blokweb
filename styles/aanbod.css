@@ -84,7 +84,7 @@ header ul li a {
 }
 
 main > section:nth-of-type(1)  {
-  background-color: red;
+  background-color: #ECEFF1;
 }
 
 main > section:nth-of-type(1) section:nth-of-type(1) {
@@ -93,44 +93,110 @@ main > section:nth-of-type(1) section:nth-of-type(1) {
 
 main > section:nth-of-type(1) section:nth-of-type(1) form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5em;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-main > section:nth-of-type(1) section:nth-of-type(1) form label {
-  background-color: white;
-  border-radius: 0.2em;
-  box-shadow: 0em 0.1em 0.2em rgba(0, 0, 0, 0.2);
-  padding: 0.75em 1.5em;
-  width: 100%;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
+  gap: 0.2em;
+  justify-content: start;
 }
 
 main > section:nth-of-type(1) section:nth-of-type(1) form label select{
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
   border: none;
+  border-radius: 0.2em;
+  background-color: white;
+  box-shadow: 0em 0.1em 0.2em rgba(0, 0, 0, 0.2);
+  padding: 0.75em 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+main > section:nth-of-type(1) section:nth-of-type(1) form label select option {
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+/*******opmaak deel 2 section 1*******/
+main > section:nth-of-type(1) section:nth-of-type(2){
+  background-color: #ECEFF1;
+  display: grid;
+  padding: 0 2em;
 }
 
 main > section:nth-of-type(1) section:nth-of-type(2) p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
 }
 
+main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) {
+  margin: 1.5em 0 0;
+}
+
+main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) span {
+  font-family: MontBold, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+} 
+
+main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) label select{
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main > section:nth-of-type(1) section:nth-of-type(2) form{
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: right;
+  grid-column-start: 1;
+  margin: 1.5em 0;
+}
+
+main > section:nth-of-type(1) section:nth-of-type(2) form input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media (width > 69em) {
+  main > section:nth-of-type(1) section:nth-of-type(2) form{
+    grid-column-start: 2;
+    text-align: right;
+  }
+}
 /********************/
 /* opmaak section 2 */
 /********************/
-main > section:nth-of-type(2) ul {
+main > section:nth-of-type(2) p {
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 1em 2em 0;
+  margin: 0;
+}
+
+main > section:nth-of-type(2) p label select {
+  font-family: MontNormal, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 0.5em 0 0.5em 0;
+  border-width: 0.1em;
+  border-radius: 0.3em;
+}
+
+/********************/
+/* opmaak section 3 */
+/********************/
+main > section:nth-of-type(3) ul {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 4em;
-  padding: 1em 2em;
+  padding: 0;
   margin: 0;
 }  
 
-main > section:nth-of-type(2) ul > li {
+main > section:nth-of-type(3) ul > li {
 	display: grid;
   justify-items: center;
   border-radius: 1em;
@@ -140,13 +206,14 @@ main > section:nth-of-type(2) ul > li {
   border: 0.01em solid;
   border-color: #DCDCDC;
   box-sizing: border-box;
+  margin: 1.5em 2em;
 }
 
-main > section:nth-of-type(2) ul > li:hover {
+main > section:nth-of-type(3) ul > li:hover {
   box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
 }
 
-main > section:nth-of-type(2) ul > li img {
+main > section:nth-of-type(3) ul > li img {
   grid-row-start: 1;
   width: 100%;
   height: 100%;
@@ -155,7 +222,7 @@ main > section:nth-of-type(2) ul > li img {
   z-index: 0;
 }
 
-main > section:nth-of-type(2) ul > li h2 {
+main > section:nth-of-type(3) ul > li h2 {
   grid-row-start: 2;
   justify-items: center;
   align-items: center;
@@ -166,7 +233,7 @@ main > section:nth-of-type(2) ul > li h2 {
   margin: 0;
 }
 
-main > section:nth-of-type(2) ul > li p {
+main > section:nth-of-type(3) ul > li p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
   color: #263238;
@@ -175,41 +242,43 @@ main > section:nth-of-type(2) ul > li p {
   margin: 0;
 }
 
-main > section:nth-of-type(2) ul > li p img{
+main > section:nth-of-type(3) ul > li p img{
   width: 2.5em;
   height: 2.5em;
+  padding: 0 0.5em 0 0.5em;
 }
 
-main > section:nth-of-type(2) ul > li > p:nth-of-type(2) {
+main > section:nth-of-type(3) ul > li > p:nth-of-type(2) {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%
 }
 
 /*overlay img text*/
-main > section:nth-of-type(2) ul > li > div:first-of-type {
+main > section:nth-of-type(3) ul > li > div:first-of-type {
   background-color: #6ede92;
-  border-radius: 0em 1em 1em 0em;
+  border-radius: 0em 0.3em 0.3em 0em;
   grid-area: 1/1;
-  justify-self: start; /* Align to the left */
-  align-self: end; /* Center vertically */
-  width: auto; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
+  justify-self: start; 
+  align-self: end; 
+  width: auto;
+  height: auto;
   z-index: 1;
   box-sizing: border-box;
   margin-bottom: 1em;
   padding: 0.5em;
 }
 
-main > section:nth-of-type(2) ul > li > div:first-of-type p strong {
+main > section:nth-of-type(3) ul > li > div:first-of-type p strong {
   font-family: MontBold, Arial, Helvetica, sans-serif;
   font-size: 1.3em;
   color: #263238;
   margin: 0;
 }
 
-main > section:nth-of-type(2) ul > li > div:first-of-type p {
+main > section:nth-of-type(3) ul > li > div:first-of-type p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   color: #263238;
@@ -217,7 +286,7 @@ main > section:nth-of-type(2) ul > li > div:first-of-type p {
 }
 
 /*opmaak buttons*/
-main > section:nth-of-type(2) ul > li > menu {
+main > section:nth-of-type(3) ul > li > menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5em;
@@ -227,7 +296,7 @@ main > section:nth-of-type(2) ul > li > menu {
   box-sizing: border-box;
 }
 
-main > section:nth-of-type(2) ul > li > menu li {
+main > section:nth-of-type(3) ul > li > menu li {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -236,7 +305,7 @@ main > section:nth-of-type(2) ul > li > menu li {
   border-radius: 0.2em;
 }
 
-main > section:nth-of-type(2) ul > li > menu li button {
+main > section:nth-of-type(3) ul > li > menu li button {
   display: flex;
   align-items: center;
   background-color: white;
@@ -248,13 +317,13 @@ main > section:nth-of-type(2) ul > li > menu li button {
   cursor: pointer;
 }
 
-main > section:nth-of-type(2) ul > li > menu li button img {
+main > section:nth-of-type(3) ul > li > menu li button img {
   width: 2.5em;
   height: auto;
   object-fit: cover; 
 }
 
-main > section:nth-of-type(2) ul > li > div:nth-of-type(2) {
+main > section:nth-of-type(3) ul > li > div:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,7 +333,7 @@ main > section:nth-of-type(2) ul > li > div:nth-of-type(2) {
   text-align: center;
 }
 
-main > section:nth-of-type(2) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
+main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
   margin-bottom: 1em;
 }
 
@@ -286,20 +355,21 @@ main > section:nth-of-type(2) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
   width: 80%; 
 }
 /*source: https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/*/
+
 @media (width > 47em) {
-	main > section:nth-of-type(2) ul {
+	main > section:nth-of-type(3) ul {
 		grid-template-columns: repeat(2, 1fr);
 	  } 
 }
 
 @media (width > 68em) {
-	main > section:nth-of-type(2) ul {
+	main > section:nth-of-type(3) ul {
 		grid-template-columns: repeat(3, 1fr);
 	  } 
 }
 
 @media (width > 93em) {
-	main > section:nth-of-type(2) ul {
+	main > section:nth-of-type(3) ul {
 		grid-template-columns: repeat(4, 1fr);
 	  } 
 }
@@ -311,6 +381,7 @@ main > section:nth-of-type(2) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
 footer {
 	display: flex;
 	justify-content: space-between;
+  flex-direction: column;
 	align-items: baseline;
 	background-color: #1f2e53;
 	color: white;
@@ -322,7 +393,7 @@ footer {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-	width: 33%;
+	width: auto;
 	padding: 1em;
   }
 
@@ -362,13 +433,13 @@ footer {
 	text-decoration: underline;
   }
 
-  @media (width < 52em) {
+@media (width > 52em) {
     footer {
-      flex-direction: column;
+      flex-direction: row;
       align-items: baseline;
     }
     footer section {
-      width: auto;
+      width: 33%;
     }
   }
   
