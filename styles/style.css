@@ -24,18 +24,60 @@ body {
 	margin: 0em;
 }
   
-	/***************************/
-	/*opmaak voor navigatiebalk*/
-	/***************************/
-	header ul {
-		display: flex;
-		align-items: center;
-		gap: 0.5em;
-		padding: 1.5em 1em; 
-		list-style-type: none;
-		margin: 0;
-	  }
+/***************************/
+/*opmaak voor navigatiebalk*/
+/***************************/
+header ul {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	padding: 1.5em 1em; 
+	list-style-type: none;
+	margin: 0;
+	}
+
+header ul li:first-child {
+	margin-right: auto;
+	}
 	  
+header ul li a span{
+	display: none;
+	gap: 0.5em;
+	}
+	  
+header ul li a:hover {
+	color: #6ede92;  
+	}
+	  
+header ul li:first-child img {
+	min-width: 6.5em;
+	max-width: 9em;
+	height: auto;
+	transition: 0.3s;
+	}
+	  
+header ul li:first-child img:hover {
+	width: 9.6875em; 
+	}
+	  
+header ul li img {
+	width: 1.625em; 
+	cursor: pointer;
+	}
+
+@media (width > 50em) {
+	header ul{
+		gap: 0.5em;
+	}
+
+	header ul li:nth-of-type(3) {
+		margin-left: 55%;
+		}
+
+	header ul li a span {
+		display: flex;
+		}
+
 	header ul li a {
 		display: flex;
 		justify-content: center;
@@ -47,38 +89,14 @@ body {
 		color: #1f2e53;
 		gap: 0.5em; 
 		padding: 0.8em;
-	  }
-	  
-	  header ul li a:hover {
-		color: #6ede92;  
-	  }
-	  
-	  header ul li:first-child img {
-		min-width: 6.5em;
-		max-width: 9em;
-		height: auto;
-		transition: 0.3s;
-	  }
-	  
-	  header ul li:first-child img:hover {
-		width: 9.6875em; 
-	  }
-	  
-	  header ul li img {
-		width: 1.625em; 
-		cursor: pointer;
-	  }
-	  
-	  /* Align the last three links to the right */
-	  header ul li:nth-of-type(3) {
-		margin-left: auto; /* Pushes these items to the right */
-	  }
+		}
+}
 	
 
 /******************/
 /*opmaak section 1*/
 /******************/
-main section:first-of-type {
+main > section:nth-of-type(1) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,20 +148,20 @@ main div a:hover {
 /************/
 /*img opmaak*/
 /************/
-main section:first-of-type div {
+main > section:nth-of-type(1) div {
 	padding: 2em 1em 4em;
 }
   
-main > section:first-of-type > img {
+main > section:nth-of-type(1) > img {
 	display: none;
 }
 
 @media (width > 52em) {
-	main section:first-of-type {
+	main > section:nth-of-type(1) {
 		display:grid;
 		grid-template-columns:1fr 1fr;
 	}
-	main section:first-of-type img {
+	main> section:nth-of-type(1) img {
 		display:block;
 		width:100%;
 		height:clamp(16em, 50vw, 30em);
@@ -226,20 +244,18 @@ main > section:nth-of-type(2) span {
 
 main > section:nth-of-type(3) {
     display: grid; 
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(auto-fit, minmax(17em, auto)); 
     justify-content: center;
     gap: 2em; 
-    padding: 0 4.5em; 
+	padding: 1em;
 }
 
 main > section:nth-of-type(3) > section {
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
-    width: clamp(20.5em, 100vw, 36em);
-    background-color: #6ede92; 
-    border-radius: 1em; 
-    padding: 1.5em; 
+    background-color: #6ede92;
+	border-radius: 1em;
     box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1);
 }
 
@@ -248,12 +264,14 @@ main > section:nth-of-type(3) h2 {
     font-size: 1.5em;
     font-weight: 600;
     line-height: 1.5em;
+	padding: 0 1em;
 }
 
 main > section:nth-of-type(3) > section > p:nth-of-type(3) {
     font-family: MontBold, Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0;
+	padding: 0 1em;
 }
 
 main > section:nth-of-type(3) p {
@@ -261,6 +279,7 @@ main > section:nth-of-type(3) p {
     font-size: 1em;
     line-height: 1.5em;
     margin: 0 0 1em; 
+	padding: 0 1em;
 }
 
 main > section:nth-of-type(3) a {
@@ -272,7 +291,7 @@ main > section:nth-of-type(3) a {
     font-family: MontNormal, Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #263238;
-    padding: 0.5em 0; 
+    padding: 0.5em 1em; 
 }
 
 main > section:nth-of-type(3) a:hover {
@@ -282,21 +301,6 @@ main > section:nth-of-type(3) a:hover {
 main > section:nth-of-type(3) section img {
     width: 1.125em; 
     height: 1.125em; 
-}
-
-/* Media Queries */
-@media (min-width: 37.5em) {
-    main > section:nth-of-type(3) {
-        grid-template-columns: 45% 45%; 
-        gap: 1em; 
-    }
-}
-
-@media (min-width: 52.5em) {
-    main > section:nth-of-type(3) {
-        grid-template-columns: 33% 33% 33%; 
-        gap: 1em; 
-    }
 }
 
 /********************/

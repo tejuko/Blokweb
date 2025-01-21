@@ -10,65 +10,69 @@ body {
 
 /*opmaak voor navigatiebalk*/
 header ul {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    padding: 1.5em 1em; 
-    list-style-type: none;
-    margin: 0;
-  }
-  
-header ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: MontMedium, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1em; 
-    text-decoration: none;
-    color: #1f2e53;
-    gap: 0.5em; 
-    padding: 0.8em;
-  }
-  
-  header ul li a:hover {
-    color: #6ede92;  
-  }
-  
-  header ul li:first-child img {
-    width: 9.375em; 
-    height: auto;
-    transition: 0.3s;
-  }
-  
-  header ul li:first-child img:hover {
-    width: 9.6875em; 
-  }
-  
-  header ul li img {
-    width: 1.625em; 
-    cursor: pointer;
-  }
-  
-  /* Align the last three links to the right */
-  header ul li:nth-of-type(3) {
-    margin-left: auto; /* Pushes these items to the right */
-  }
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	padding: 1.5em 1em; 
+	list-style-type: none;
+	margin: 0;
+	}
 
-  @media (width < 52em) {
-    header ul li a span{
-      display: none;
-    }
-    header ul li:nth-of-type(3) {
-      margin-left: 0; /* Pushes these items to the right */
-    }
-    header ul li:first-child {
-      margin-right: auto; /* Pushes the rest to the right */
-    }
-    header ul {
-      gap: 0;
-    }
-  }
+header ul li:first-child {
+	margin-right: auto;
+	}
+	  
+header ul li a span{
+	display: none;
+	gap: 0.5em;
+	}
+	  
+header ul li a:hover {
+	color: #6ede92;  
+	}
+	  
+header ul li:first-child img {
+	min-width: 6.5em;
+	max-width: 9em;
+	height: auto;
+	transition: 0.3s;
+	}
+	  
+header ul li:first-child img:hover {
+	width: 9.6875em; 
+	}
+	  
+header ul li img {
+	width: 1.625em; 
+	cursor: pointer;
+	}
+
+@media (width > 50em) {
+	header ul{
+		gap: 0.5em;
+	}
+
+	header ul li:nth-of-type(3) {
+		margin-left: 55%;
+		}
+
+	header ul li a span {
+		display: flex;
+		}
+
+	header ul li a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: MontMedium, Arial, Helvetica, sans-serif;
+		font-weight: 600;
+		font-size: 1em; 
+		text-decoration: none;
+		color: #1f2e53;
+		gap: 0.5em; 
+		padding: 0.8em;
+		}
+}
 
 /****************/
 /*Opmaak section 1*/
