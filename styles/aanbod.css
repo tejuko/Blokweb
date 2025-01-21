@@ -1,9 +1,21 @@
 :root {
-  --color-text: #263238;
-	--color-background:#eee;
+  --primary-color: white;
+  --seconday-color: #6ede92;
+  --tertiary-color: #263238;
+  --quaternary-color: #ECEFF1;
+  --quinary-color: #DCDCDC;
+}
+
+.dark-theme{
+  --primary-color: #263238;
+  --seconday-color: #0d1c13;
+  --tertiary-color: #ECEFF1;
+  --quaternary-color: #08120c;
+  --quinary-color: #08120c;
 }
 
 body {
+  background-color: var(--primary-color);
 	padding: 0em; 
 	margin: 0em;
 }
@@ -39,7 +51,7 @@ header ul li:first-child img {
 	}
 	  
 header ul li:first-child img:hover {
-	width: 9.6875em; 
+	width: 7em; 
 	}
 	  
 header ul li img {
@@ -47,13 +59,19 @@ header ul li img {
 	cursor: pointer;
 	}
 
+#darkmode {
+  width: 1.625em;
+  cursor: pointer;
+  padding-right: 0.5em;
+}
+
 @media (width > 50em) {
 	header ul{
 		gap: 0.5em;
 	}
 
 	header ul li:nth-of-type(3) {
-		margin-left: 55%;
+		margin-left: 50%;
 		}
 
 	header ul li a span {
@@ -68,7 +86,7 @@ header ul li img {
 		font-weight: 600;
 		font-size: 1em; 
 		text-decoration: none;
-		color: #1f2e53;
+		color: var(--tertiary-color);
 		gap: 0.5em; 
 		padding: 0.8em;
 		}
@@ -88,7 +106,7 @@ header ul li img {
 }
 
 main > section:nth-of-type(1)  {
-  background-color: #ECEFF1;
+  background-color: var(--quaternary-color);
 }
 
 main > section:nth-of-type(1) section:nth-of-type(1) {
@@ -105,9 +123,10 @@ main > section:nth-of-type(1) section:nth-of-type(1) form {
 main > section:nth-of-type(1) section:nth-of-type(1) form label select{
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
   border: none;
   border-radius: 0.2em;
-  background-color: white;
+  background-color: var(--primary-color);
   box-shadow: 0em 0.1em 0.2em rgba(0, 0, 0, 0.2);
   padding: 0.75em 1.5em;
   width: 100%;
@@ -118,11 +137,12 @@ main > section:nth-of-type(1) section:nth-of-type(1) form label select{
 main > section:nth-of-type(1) section:nth-of-type(1) form label select option {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
 }
 
 /*******opmaak deel 2 section 1*******/
 main > section:nth-of-type(1) section:nth-of-type(2){
-  background-color: #ECEFF1;
+  background-color: var(--quaternary-color);
   display: grid;
   padding: 0 2em;
 }
@@ -130,6 +150,7 @@ main > section:nth-of-type(1) section:nth-of-type(2){
 main > section:nth-of-type(1) section:nth-of-type(2) p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
   line-height: 1.5em;
   margin: 0;
 }
@@ -141,11 +162,13 @@ main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) {
 main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) span {
   font-family: MontBold, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
 } 
 
 main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) label select{
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
   line-height: 1.5em;
   text-decoration: underline;
   border: none;
@@ -156,6 +179,7 @@ main > section:nth-of-type(1) section:nth-of-type(2) p:nth-of-type(1) label sele
 main > section:nth-of-type(1) section:nth-of-type(2) form{
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
   line-height: 1.5em;
   text-align: right;
   grid-column-start: 1;
@@ -178,6 +202,7 @@ main > section:nth-of-type(1) section:nth-of-type(2) form input[type="checkbox"]
 main > section:nth-of-type(2) p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
+  color: var(--tertiary-color);
   padding: 1em 2em 0;
   margin: 0;
 }
@@ -208,7 +233,7 @@ main > section:nth-of-type(3) ul > li {
   cursor: pointer;
   position: relative;
   border: 0.01em solid;
-  border-color: #DCDCDC;
+  border-color: var(--quinary-color);
   box-sizing: border-box;
   margin: 1.5em 2em;
 }
@@ -232,7 +257,7 @@ main > section:nth-of-type(3) ul > li h2 {
   align-items: center;
   font-family: MontBold, Arial, Helvetica, sans-serif;
   font-size: 1.5em;
-  color: #263238;
+  color: var(--tertiary-color);
   line-height: 1.5em;
   margin: 0;
 }
@@ -240,7 +265,7 @@ main > section:nth-of-type(3) ul > li h2 {
 main > section:nth-of-type(3) ul > li p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 1em;
-  color: #263238;
+  color: var(--tertiary-color);
   line-height: 2em;
   padding: 0;
   margin: 0;
@@ -262,7 +287,7 @@ main > section:nth-of-type(3) ul > li > p:nth-of-type(2) {
 
 /*overlay img text*/
 main > section:nth-of-type(3) ul > li > div:first-of-type {
-  background-color: #6ede92;
+  background-color: var(--seconday-color);
   border-radius: 0em 0.3em 0.3em 0em;
   grid-area: 1/1;
   justify-self: start; 
@@ -278,14 +303,14 @@ main > section:nth-of-type(3) ul > li > div:first-of-type {
 main > section:nth-of-type(3) ul > li > div:first-of-type p strong {
   font-family: MontBold, Arial, Helvetica, sans-serif;
   font-size: 1.3em;
-  color: #263238;
+  color: var(--tertiary-color);
   margin: 0;
 }
 
 main > section:nth-of-type(3) ul > li > div:first-of-type p {
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 0.9em;
-  color: #263238;
+  color: var(--tertiary-color);
   line-height: 1.5em;
 }
 
@@ -305,18 +330,18 @@ main > section:nth-of-type(3) ul > li > menu li {
   justify-content: center;
   list-style-type: none;
   border: 0.01em solid;
-  border-color: #DCDCDC;
+  border-color: var(--quinary-color);
   border-radius: 0.2em;
 }
 
 main > section:nth-of-type(3) ul > li > menu li button {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: var(--primary-color);
   border: none;
   font-family: MontNormal, Arial, Helvetica, sans-serif;
   font-size: 0.9em;
-  color: #263238;
+  color: var(--tertiary-color);
   padding: 0.3em 0em;
   cursor: pointer;
 }
@@ -349,8 +374,8 @@ main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
 } 
 
 .skill { 
-  background-color: #6ede92; 
-  color: white; 
+  background-color: var(--seconday-color); 
+  color: var(--primary-color); 
   height: 0.35em;
   border-radius: 1em; 
 } 

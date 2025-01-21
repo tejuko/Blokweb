@@ -10,9 +10,22 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text: #263238;
-	--color-background:#eee;
-}
+
+	--primary-color: white;
+	--seconday-color: #6ede92;
+	--tertiary-color: #263238;
+	--quaternary-color: #ECEFF1;
+	--quinary-color: #263238;
+  }
+  
+  .dark-theme{
+	--primary-color: #263238;
+	--seconday-color: #0d1c13;
+	--tertiary-color: #ECEFF1;
+	--quaternary-color: #08120c;
+	--quinary-color: #6ede92;
+  }
+
 
 /****************/
 /* JOUW STYLING */
@@ -20,6 +33,7 @@
 
 /* jouw code */
 body {
+	background-color: var(--primary-color);
 	padding: 0em; 
 	margin: 0em;
 }
@@ -57,7 +71,7 @@ header ul li:first-child img {
 	}
 	  
 header ul li:first-child img:hover {
-	width: 9.6875em; 
+	width: 7em; 
 	}
 	  
 header ul li img {
@@ -65,13 +79,19 @@ header ul li img {
 	cursor: pointer;
 	}
 
+#darkmode {
+  width: 1.625em;
+  cursor: pointer;
+  padding-right: 0.5em;
+}
+
 @media (width > 50em) {
 	header ul{
 		gap: 0.5em;
 	}
 
 	header ul li:nth-of-type(3) {
-		margin-left: 55%;
+		margin-left: 50%;
 		}
 
 	header ul li a span {
@@ -86,7 +106,7 @@ header ul li img {
 		font-weight: 600;
 		font-size: 1em; 
 		text-decoration: none;
-		color: #1f2e53;
+		color: var(--tertiary-color);
 		gap: 0.5em; 
 		padding: 0.8em;
 		}
@@ -104,12 +124,13 @@ main > section:nth-of-type(1) {
 }
 
 main {
-	color: #263238;
+	color: var(--tertiary-color);
 }
 
 main div h1 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-weight: 600;
+	color: var(--tertiary-color);
 	font-size: 3.05em; 
 	margin: 0em;
 }
@@ -117,6 +138,7 @@ main div h1 {
 main div p {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
+	color: var(--tertiary-color);
 	font-size: 1.25em; 
 	margin: 1em 0em; 
 }
@@ -130,8 +152,8 @@ main div a {
 	font-size: 1em; 
 	text-align: center;
 	text-decoration: none;
-	color: #263238;
-	background-color: #6ede92;
+	color: var(--tertiary-color);
+	background-color: var(--seconday-color);
 	border: none;
 	padding: 0.625em 1.25em; 
 	width: 12em; 
@@ -142,7 +164,7 @@ main div a {
 }
   
 main div a:hover {
-	background-color: #4c9c66;
+	background-color: var(--quaternary-color);
 }
   
 /************/
@@ -188,7 +210,7 @@ main > section:nth-of-type(2) ol {
 	flex-wrap: wrap;
 	justify-content: center;
 	list-style: none;
-	background-color: white;
+	background-color: var(--primary-color);
 	gap: 1em;
 }
 
@@ -197,7 +219,7 @@ main > section:nth-of-type(2) ol li {
 	padding: 0.75em;
 	text-align: center;
 	border-radius: 1em;
-	background-color: white;
+	background-color:var(--primary-color);
 	box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
 }
   
@@ -207,7 +229,7 @@ main > section:nth-of-type(2) ol li a{
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	color: #263238;
+	color: var(--tertiary-color);
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1em;
@@ -254,7 +276,7 @@ main > section:nth-of-type(3) > section {
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
-    background-color: #6ede92;
+    background-color: var(--seconday-color);
 	border-radius: 1em;
     box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1);
 }
@@ -262,6 +284,7 @@ main > section:nth-of-type(3) > section {
 main > section:nth-of-type(3) h2 {
     font-family: MontBold, Arial, Helvetica, sans-serif;
     font-size: 1.5em;
+	color: var(--tertiary-color);
     font-weight: 600;
     line-height: 1.5em;
 	padding: 0 1em;
@@ -270,6 +293,7 @@ main > section:nth-of-type(3) h2 {
 main > section:nth-of-type(3) > section > p:nth-of-type(3) {
     font-family: MontBold, Arial, Helvetica, sans-serif;
     font-size: 1em;
+	color: var(--tertiary-color);
     margin: 0;
 	padding: 0 1em;
 }
@@ -277,6 +301,7 @@ main > section:nth-of-type(3) > section > p:nth-of-type(3) {
 main > section:nth-of-type(3) p {
     font-family: MontNormal, Arial, Helvetica, sans-serif;
     font-size: 1em;
+	color: var(--tertiary-color);
     line-height: 1.5em;
     margin: 0 0 1em; 
 	padding: 0 1em;
@@ -290,7 +315,7 @@ main > section:nth-of-type(3) a {
     text-decoration: none;
     font-family: MontNormal, Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color: #263238;
+    color: var(--tertiary-color);
     padding: 0.5em 1em; 
 }
 
@@ -309,6 +334,7 @@ main > section:nth-of-type(3) section img {
 main > section:nth-of-type(4) h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 2em;
+	color: var(--primary-color);
 	padding: 0 0 0 4em;
 }
 
@@ -328,14 +354,14 @@ main > section:nth-of-type(4) ol li {
     cursor: pointer;
     border-style: solid;
     border-width: .01em;
-    border-color: #263238;
+    border-color: var(--quinary-color);
 }
 
 main > section:nth-of-type(4) ol li h2 {
     grid-row-start: 3;
     font-family: MontMedium, Arial, Helvetica, sans-serif;
     font-size: 1.25em;
-    color: #263238;
+    color: var(--tertiary-color);
     line-height: 1.5em;
     padding: 0 1em 1em 1em;
     margin: 0;
@@ -344,7 +370,7 @@ main > section:nth-of-type(4) ol li h2 {
 main > section:nth-of-type(4) ol li p {
     font-family: MontLight, Arial, Helvetica, sans-serif;
     font-size: 0.9em;
-    color: #263238;
+    color: var(--tertiary-color);
     padding: 1em 1em 0.5em 1em;
     margin: 0;
   }
@@ -373,7 +399,7 @@ main > section:nth-of-type(4) ol li div img:hover {
 footer {
 	display: flex;
 	justify-content: space-between;
-  flex-direction: column;
+ 	flex-direction: column;
 	align-items: baseline;
 	background-color: #1f2e53;
 	color: white;
@@ -391,12 +417,14 @@ footer {
 
   footer p {
 	font-family: MontNormal, Arial, Helvetica, sans-serif;
+	color: white;
 	line-height: 1.5em;
 	margin: 0;
   }
 
   footer h2 {
 	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	color: white;
   }
 
   footer a {
