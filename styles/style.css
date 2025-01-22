@@ -334,7 +334,7 @@ main > section:nth-of-type(3) section img {
 main > section:nth-of-type(4) h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 2em;
-	color: var(--primary-color);
+	color: var(--tertiary-color);
 	padding: 0 0 0 4em;
 }
 
