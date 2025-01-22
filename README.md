@@ -234,7 +234,8 @@ divjes goed bekijken!!
 en classes!!
 screenreadertest
 kruisjes img mooi maken - check
-filter invert bekijken voor knopjes
+filter invert bekijken voor knopjes - check
+header nav ul li a span tekst dark mode proof maken
 
 vrijdag 14:00 TTH02B03
 

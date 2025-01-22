@@ -14,7 +14,10 @@
   --quinary-color: #08120c;
 }
 
-body.dark-theme .invert-on-dark {
+body.dark-theme
+header nav ul li:nth-child(n+2):nth-child(-n+5),
+main > section:nth-of-type(3) ul > li img:nth-child(1), 
+main > section:nth-of-type(3) ul > li > menu > li > img{
   filter: invert(1);
 }
 
@@ -40,6 +43,7 @@ header ul li:first-child {
 header ul li a span{
 	display: none;
 	gap: 0.5em;
+  color: var(--tertiary-color);
 	}
 	  
 header ul li a:hover {
@@ -85,6 +89,7 @@ header ul li img {
 
 	header ul li a span {
 		display: flex;
+    color: var(--tertiary-color);
 		}
 
 	header ul li a {

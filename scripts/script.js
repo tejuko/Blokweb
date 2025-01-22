@@ -12,4 +12,7 @@ darkmode.onclick = function(){
     }
 }
 
+
+
+
 /*bron: https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=249s&ab_channel=GreatStack*/
