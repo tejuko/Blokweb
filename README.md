@@ -173,7 +173,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb hier geleerd hoe ik objecten kan laten zweven boven een afbeelding, dit is erg handig voor mijn
+  aanbod pagina.
 
 
   ### Agenda voor meeting
@@ -190,10 +191,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik weet nu hoe ik dingen kan verbergen zodat ze niet meer zichtbaar zijn op de pagina.
 
 handige links: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
@@ -229,8 +227,16 @@ https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=249s&ab_channel=GreatStack
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
+hamburder menu
+read me in orde
+toegankelijktest
+divjes goed bekijken!!
+en classes!!
+screenreadertest
+kruisjes img mooi maken - check
+filter invert bekijken voor knopjes
 
-
+vrijdag 14:00 TTH02B03
 
 
 ## Bronnenlijst

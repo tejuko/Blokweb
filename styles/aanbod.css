@@ -14,6 +14,10 @@
   --quinary-color: #08120c;
 }
 
+body.dark-theme .invert-on-dark {
+  filter: invert(1);
+}
+
 body {
   background-color: var(--primary-color);
 	padding: 0em; 
@@ -24,7 +28,6 @@ body {
 header ul {
 	display: flex;
 	align-items: center;
-	gap: 2em;
 	padding: 1.5em 1em; 
 	list-style-type: none;
 	margin: 0;
@@ -44,10 +47,11 @@ header ul li a:hover {
 	}
 	  
 header ul li:first-child img {
-	min-width: 6.5em;
-	max-width: 9em;
+	width: 100%;
+  max-width: 6.5em;
 	height: auto;
 	transition: 0.3s;
+  padding: 0;
 	}
 	  
 header ul li:first-child img:hover {
@@ -57,6 +61,7 @@ header ul li:first-child img:hover {
 header ul li img {
 	width: 1.625em; 
 	cursor: pointer;
+  padding-left: 1em;
 	}
 
 #darkmode {
@@ -70,8 +75,12 @@ header ul li img {
 		gap: 0.5em;
 	}
 
+  header ul li:first-child {
+    margin-right: 0;
+    }
+
 	header ul li:nth-of-type(3) {
-		margin-left: 50%;
+		margin-left: auto;
 		}
 
 	header ul li a span {
@@ -90,6 +99,10 @@ header ul li img {
 		gap: 0.5em; 
 		padding: 0.8em;
 		}
+
+  header ul li img {
+    padding: 0;
+  }
 }
 
 /****************/
@@ -220,7 +233,8 @@ main > section:nth-of-type(2) p label select {
 /********************/
 main > section:nth-of-type(3) ul {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  /*grid-template-columns: repeat(1, 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(min(20em, 100%), 1fr));
   padding: 0;
   margin: 0;
 }  
@@ -267,7 +281,8 @@ main > section:nth-of-type(3) ul > li p {
   font-size: 1em;
   color: var(--tertiary-color);
   line-height: 2em;
-  padding: 0;
+  padding: 0em 1em;
+  text-align: center;
   margin: 0;
 }
 
@@ -280,9 +295,12 @@ main > section:nth-of-type(3) ul > li p img{
 main > section:nth-of-type(3) ul > li > p:nth-of-type(2) {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  width: 100%
+  width: 100%;
+}
+
+main > section:nth-of-type(3) ul > li > p:nth-of-type(4) {
+  padding-bottom: 1em;
 }
 
 /*overlay img text*/
@@ -312,6 +330,8 @@ main > section:nth-of-type(3) ul > li > div:first-of-type p {
   font-size: 0.9em;
   color: var(--tertiary-color);
   line-height: 1.5em;
+  text-align: left;
+  padding: 0;
 }
 
 /*opmaak buttons*/
@@ -348,6 +368,7 @@ main > section:nth-of-type(3) ul > li > menu li button {
 
 main > section:nth-of-type(3) ul > li > menu li button img {
   width: 2.5em;
+  padding: 0em 0.5em;
   height: auto;
   object-fit: cover; 
 }
@@ -362,11 +383,23 @@ main > section:nth-of-type(3) ul > li > div:nth-of-type(2) {
   text-align: center;
 }
 
-main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
+/* main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
   margin-bottom: 1em;
+} */
+
+progress {
+  height: 0.35em;
+  width: 90%; 
+  border-radius: 20em;
 }
 
-.container { 
+progress::-webkit-progress-bar {background-color: #DCDCDC; width: 100%;
+                                border-radius: 20em;}
+progress::-webkit-progress-value {background-color: #6ede92 !important;
+                                  border-radius: 20em;}
+/* source: https://stackoverflow.com/questions/18368202/how-can-i-set-the-color-for-the-progress-element */
+
+/* .container { 
   background-color: #DCDCDC; 
   height: 0.35em;
   width: 90%; 
@@ -382,10 +415,10 @@ main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
 
 .html { 
   width: 80%; 
-}
+} */
 /*source: https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/*/
 
-@media (width > 47em) {
+/* @media (width > 47em) {
 	main > section:nth-of-type(3) ul {
 		grid-template-columns: repeat(2, 1fr);
 	  } 
@@ -402,6 +435,12 @@ main > section:nth-of-type(3) ul > li > div:nth-of-type(2) p:nth-of-type(1) {
 		grid-template-columns: repeat(4, 1fr);
 	  } 
 }
+
+@media (width > 100em) {
+	main > section:nth-of-type(3) ul {
+		grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
+	  } 
+} */
 
 
 /*****************/
