@@ -128,6 +128,31 @@ body.dark-theme header nav ul li:nth-of-type(5) img{
   }
 }
 
+/* hamburger menu */
+#hamburger-menu {
+	position: absolute;
+	display: none;
+    background-color: var(--primary-color);
+    width: 100%;
+	z-index: 1;
+	margin: 0;
+	padding-bottom: 100%;
+}
+
+#hamburger-menu ol li {
+	font-family: MontBold ,Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	color: var(--quinary-color);
+	line-height: 2.5em;
+	color: var(--tertiary-color);
+	list-style-type: none;
+}
+
+/* geklikt */
+#hamburger-menu.active {
+    display: block;
+}
+
 /******************/
 /*opmaak section 1*/
 /******************/
@@ -206,7 +231,7 @@ main > section:nth-of-type(1) > img {
 		object-position: right;
 	}
 }
-  
+
 /******************/
 /*section 2 opmaak*/
 /******************/
@@ -356,11 +381,12 @@ body.dark-theme main > section:nth-of-type(3) section img{
 /********************/
 /* section 4 opmaak */
 /********************/
+
 main > section:nth-of-type(4) h2 {
 	font-family: MontBold, Arial, Helvetica, sans-serif;
 	font-size: 2em;
 	color: var(--tertiary-color);
-	padding: 0 0 0 4em;
+	padding-left: 1em;
 }
 
 main > section:nth-of-type(4) ol {
@@ -416,7 +442,37 @@ main > section:nth-of-type(4) ol li div img {
 
 main > section:nth-of-type(4) ol li div img:hover {
     scale: 1.1;
-  }  
+  } 
+  
+main > section:nth-of-type(4) a {
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	align-items: center;
+	font-family: MontMedium, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1em; 
+	text-align: center;
+	text-decoration: none;
+	color: var(--tertiary-color);
+	background-color: var(--seconday-color);
+	border: none;
+	padding: 0.625em 1.25em; 
+	width: 15em; 
+	border-radius: 1em; 
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0 auto;
+}
+	  
+main > section:nth-of-type(4) a:hover {
+	background-color: #4c9c66;
+}
+
+@media (width > 37.5em) {
+	main > section:nth-of-type(4) h2{
+		padding-left: 4em;
+	}
+}
 
 /*****************/
 /* opmaak footer */

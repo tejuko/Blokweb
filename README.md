@@ -40,11 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina HOME 
-  <img src="readme-images/screenshot_home.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot_home.png" width="375px" alt="dit is de home pagina van SVNK op telefoon formaat">
+  <img src="readme-images/home_laptop.png" width="375px" alt="dit is de home pagina van SVNK op laptop formaat">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina AANBOD
-  <img src="readme-images/screenshot_aanbod.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot_aanbod.png" width="375px" alt="dit is de aanbod pagina van SVNK op telefoon formaat">
+  <img src="readme-images/aanbod-laptop.png" width="375px" alt="dit is de aanbod pagina van SVNK op laptop formaat">
  
 </details>
 
@@ -58,7 +60,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   De narrator sloeg verschillende vlakken tekst over, verder zijn bepaalde buttons na het hoveren onleesbaar voor mensen met een visuele beperking.
-  Ook is er geen alt tekst toegevoegd bij de afbeeldingen.
+  Ook is er geen alt tekst toegevoegd bij veel van de afbeeldingen.
 
 </details>
 
@@ -70,13 +72,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-schets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/menu-svnk.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -160,6 +159,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  er was geen alt tekst en kopjes werden overgeslagen, ik heb waar nodig is wel de alt tekst toegevoegd en alles heeft een h2
+  zodat de gebruiker goed kan navigeren door de website.
 
 </details>
 
@@ -212,19 +213,26 @@ https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=249s&ab_channel=GreatStack
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/homeaf.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/aanbodaf.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe ik grid moet gebruiken en elemeneten over elkaar heen kan laten "zweven" door middel van
+  een z-index. Ook heb ik geleerd hoe ik tekst visueel onzichtbaar kan maken wat erg handig is voor sommige
+  kopjes. Ik merk dat ik meer begrijp van html en css en hoe je specifieke elementen kan selecteren waar ik
+  erg trots op ben.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/tess1.png" width="375px" alt="top">
+  <img src="readme-images/tess2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vond het maken van een hamburger menu moeilijk, dit komt denkt ik omdat ik eerst was begonnen met een navbar en daarna pas aan een hamburgermenu,
+  hierdoor is hij naar mijn mening erg slordig. Ik zou dit de volgende keer anders doen door bijvoorbeeld een tutorial te volgen. Verder
+  vind ik javascript nogsteeds moeilijk.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/tess3.png" width="375px" alt="bummer">
 </details>
 
 hamburder menu
@@ -235,7 +243,7 @@ en classes!! - check
 screenreadertest
 kruisjes img mooi maken - check
 filter invert bekijken voor knopjes - check
-header nav ul li a span tekst dark mode proof maken
+header nav ul li a span tekst dark mode proof maken -check
 
 vrijdag 14:00 TTH02B03
 
@@ -249,8 +257,13 @@ vrijdag 14:00 TTH02B03
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+  2. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
+  3. https://www.geeksforgeeks.org/how-to-create-a-progress-bar-using-html-and-css/
+  4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+  5. https://www.a11yproject.com/posts/how-to-hide-content/
+  6. https://www.youtube.com/watch?v=3T0gjtXRNC0&ab_channel=Coding2GO 
+  7. https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=249s&ab_channel=GreatStack
+  8. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress 
 
 </details>
