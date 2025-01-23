@@ -18,14 +18,13 @@
 	--quinary-color: #263238;
   }
   
-  .dark-theme{
+.dark-theme{
 	--primary-color: #263238;
 	--seconday-color: #0d1c13;
 	--tertiary-color: #ECEFF1;
 	--quaternary-color: #08120c;
 	--quinary-color: #6ede92;
   }
-
 
 /****************/
 /* JOUW STYLING */
@@ -79,6 +78,13 @@ header ul li img {
 	cursor: pointer;
   	padding-left: 1em;
 	box-sizing: content-box;
+}
+
+body.dark-theme header nav ul li:nth-of-type(2) img,
+body.dark-theme header nav ul li:nth-of-type(3) img,
+body.dark-theme header nav ul li:nth-of-type(4) img,
+body.dark-theme header nav ul li:nth-of-type(5) img{
+	filter: invert(1);
 }
 
 #darkmode {
@@ -261,6 +267,10 @@ main > section:nth-of-type(2) ol li img:hover {
 main > section:nth-of-type(2) span {
 	padding: 0.75em 0;
 }
+
+body.dark-theme main > section:nth-of-type(2) ol li img {
+	filter: invert(1);
+  }
   
 /********************/
 /* section 3 opmaak */
@@ -338,6 +348,10 @@ main > section:nth-of-type(3) section img {
     width: 1.125em; 
     height: 1.125em; 
 }
+
+body.dark-theme main > section:nth-of-type(3) section img{
+	filter: invert(1);
+  }
 
 /********************/
 /* section 4 opmaak */

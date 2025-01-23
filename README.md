@@ -230,8 +230,8 @@ https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=249s&ab_channel=GreatStack
 hamburder menu
 read me in orde
 toegankelijktest
-divjes goed bekijken!!
-en classes!!
+divjes goed bekijken!! - check
+en classes!! - check
 screenreadertest
 kruisjes img mooi maken - check
 filter invert bekijken voor knopjes - check
