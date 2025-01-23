@@ -113,9 +113,9 @@ body.dark-theme header nav ul li:nth-of-type(5) img{
 #hamburger-menu {
 	position: absolute;
 	display: none;
-    background-color: var(--primary-color);
-    width: 100%;
-	z-index: 1;
+  background-color: var(--primary-color);
+  width: 100%;
+	z-index: 1000;
 	margin: 0;
 	padding-bottom: 100%;
 }
@@ -127,6 +127,11 @@ body.dark-theme header nav ul li:nth-of-type(5) img{
 	line-height: 2.5em;
 	color: var(--tertiary-color);
 	list-style-type: none;
+	cursor: pointer;
+}
+
+#hamburger-menu ol li:hover {
+	color: #6ede92;
 }
 
 /* geklikt */
