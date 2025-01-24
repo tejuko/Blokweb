@@ -139,7 +139,13 @@ body.dark-theme header nav ul li:nth-of-type(5) img{
 	padding-bottom: 100%;
 }
 
-#hamburger-menu ol li {
+#hamburger-menu ul {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+#hamburger-menu ul li {
 	font-family: MontBold ,Arial, Helvetica, sans-serif;
 	font-size: 1.25em;
 	color: var(--quinary-color);
@@ -147,9 +153,10 @@ body.dark-theme header nav ul li:nth-of-type(5) img{
 	color: var(--tertiary-color);
 	list-style-type: none;
 	cursor: pointer;
+	margin: 0;
 }
 
-#hamburger-menu ol li:hover {
+#hamburger-menu ul li:hover {
 	color: #6ede92;
 }
 
