@@ -444,7 +444,7 @@ progress {
 
 progress::-webkit-progress-bar {background-color: #DCDCDC; width: 100%;
                                 border-radius: 20em;}
-progress::-webkit-progress-value {background-color: #6ede92 !important;
+progress::-webkit-progress-value {background-color: #6ede92 ;
                                   border-radius: 20em;}
 /* source: https://stackoverflow.com/questions/18368202/how-can-i-set-the-color-for-the-progress-element */
 
